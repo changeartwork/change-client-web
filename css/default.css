@@ -124,6 +124,17 @@ input:focus, textarea:focus, button:focus {
     line-height: 1.343;
 }
 
+
+.section-heading-center h1 {
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(34, 54, 69);
+    font-weight: bold;
+    line-height: 1.343;
+}
+
+.bg-grey{ background-color: rgba(100, 117, 137, 0.102);}
+
 .section-heading p {
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
