@@ -120,7 +120,7 @@ Version: 1.0.0
 
 .menu-area ul li {
     display: inline;
-    font-size: 14px;
+    font-size: 13px;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
@@ -2385,4 +2385,15 @@ section.member-skills {
     border-color: transparent transparent #fff #fff;
     transform: rotate(-45deg);
     box-shadow: -6px 6px 6px rgb(0, 0, 0, 0.16);
+}
+
+
+
+/* new-1-12-22 */
+
+.post-text h2 {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(34, 54, 69);
+    font-weight: bold;
 }
