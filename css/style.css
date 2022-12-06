@@ -2511,3 +2511,24 @@ section.member-skills {
     transform: scale(1.1);
   }
   
+
+  .modal.fade.show .modal-dialog.modal-dialog-slideout {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    display: flex;
+    align-items: start;
+    -webkit-box-align: start;
+    height: 100%;
+}
+.modal.fade .modal-dialog.modal-dialog-slideout {
+    -webkit-transform: translate(100%, 0)scale(1);
+    transform: translate(100%, 0)scale(1);
+    -webkit-box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+    height: 100%;
+}
+
+.modal-dialog-slideout {
+    min-height: 100%;
+    margin: 0 0 0 auto;
+}
