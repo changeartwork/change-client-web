@@ -1,6 +1,6 @@
 /* 
 
-Theme Name: Habu - agency HTML template
+Theme Name: Change - agency HTML template
 Author: wpsmasher
 Support: wpsmasher@gmail.com
 Description: Responsive agency HTML template
@@ -2532,3 +2532,13 @@ section.member-skills {
     min-height: 100%;
     margin: 0 0 0 auto;
 }
+
+
+.form-control
+{    border: 2px solid #f0f0f0;}
+
+.custom-file-label {
+    border: 2px solid #f0f0f0;
+  }
+
+  .modal-content{background-color: #f6f6f6;}
