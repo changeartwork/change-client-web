@@ -65,6 +65,7 @@ input:focus, textarea:focus, button:focus {
     letter-spacing: 2.6px;
     display: inline-block;
     transition: 0.3s;
+    text-align: center;
 }
 
 .menu-button {

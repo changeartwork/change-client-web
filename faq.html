@@ -125,22 +125,100 @@
                       </ul>
                   </nav>
                   <div class="mobile-menu"></div>
-                  <a href="getquote.html" class="large-blue-button menu-button">Get a quote</a>
+                  <a href="getquote.html" class="large-blue-button menu-button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Get a quote</a>
               </div>
             </div>
         </div>
     </div>
-
+    <div class="modal fade pr-0" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Request Form</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="first-name" class="col-form-label">First Name:</label>
+                  <input type="text" class="form-control shadow" id="first-name">
+                </div>
+  
+                <div class="form-group">
+                  <label for="last-name" class="col-form-label">Last Name:</label>
+                  <input type="text" class="form-control shadow" id="last-name">
+                </div>
+  
+                <div class="form-group">
+                  <label for="email_art" class="col-form-label">Email:</label>
+                  <input type="text" class="form-control shadow" id="email_art">
+                </div>
+  
+  
+                <div class="form-group">
+                  <label for="mobile_num" class="col-form-label">Mobile Number:</label>
+                  <input type="text" class="form-control shadow" id="mobile_num">
+                </div>
+                <div class="form-group">
+                  <label for="country"> Country:</label>
+                  <select class="form-control" id="country">
+                      <option value="">Select Country</option>
+                      <option value="Abkhazia">Abkhazia</option>
+                      <option value="Afghanistan">Afghanistan</option>
+                      <option value="Albania">Albania</option>
+                      <option value="Algeria">Algeria</option>
+                      <option value="American Samoa">American Samoa</option>
+                      <option value="Andorra">Andorra</option>
+                      <option value="Angola">Angola</option>
+                      <option value="Anguilla">Anguilla</option>
+                      <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                      <option value="Argentina">Argentina</option>
+                      <option value="Armenia">Armenia</option>
+                      <option value="Aruba">Aruba</option>
+                      <option value="Australia">Australia</option>
+                      
+                  </select>
+                </div>
+  
+  
+                <div class="form-group">
+                  <label for="inputGroupFile01" class="form-label">File Upload:</label>
+                 
+             
+                <div class="input-group mb-3">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input shadow" id="inputGroupFile01">
+                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                  </div>
+                </div>
+              </div>
+  
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label ">Message:</label>
+                  <textarea class="form-control shadow" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+              <button type="submit" class="btn btn-primary">PLACE QUOTE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Side Modal Bottom Right Danger-->
     <!-- =========================== 3. Page Header Section =========================================== -->
 
     <div class="page-header">
         <div class="about-banner-shape-left wow animate__animated animate__fadeInLeft">
             <img src="images/shapes/03_shape-01.png" class="wow animate__animated animate__pulse animate__infinite"
-                alt="habu">
+                alt="Change">
         </div>
         <div class="about-banner-shape-right wow animate__animated animate__fadeInRight animate__delay-1s">
             <img src="images/shapes/03_shape-02.png" class="wow animate__animated animate__pulse animate__infinite"
-                alt="habu">
+                alt="Change">
         </div>
         <div class="container">
             <div class="page-header-text wow animate__animated animate__fadeInDown">
@@ -382,18 +460,18 @@
             </div>
         </div>
         <div class="custom-projects-shape-2">
-            <img src="images/shapes/shape-02.png" alt="Habu">
+            <img src="images/shapes/shape-02.png" alt="Change">
         </div>
         <div class="custom-projects-circle-1">
             <img src="images/shapes/shape-circle.png" class="wow animate__animated animate__pulse animate__infinite"
-                alt="Habu">
+                alt="Change">
         </div>
         <div class="custom-projects-circle-2">
-            <img src="images/shapes/shape-circle.png" alt="Habu">
+            <img src="images/shapes/shape-circle.png" alt="Change">
         </div>
         <div class="custom-projects-circle-3">
             <img src="images/shapes/shape-circle.png" class="wow animate__animated animate__pulse animate__infinite"
-                alt="Habu">
+                alt="Change">
         </div>
         <div class="custom-projects-circle-4"></div>
     </div>
@@ -442,7 +520,7 @@
     <!-- =========================== 12. Copyright Section =========================================== -->
 
     <div class="container text-center copyright">
-        <p>Copyright ©2022 Change!. All Rights Reserved</p>
+        <p>Copyright ©2022 CHANGE!. All Rights Reserved</p>
     </div>
 
     <!-- All JS -->
