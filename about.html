@@ -37,8 +37,9 @@
             <span>N</span>
             <span>G</span>
             <span>E</span>
-            
+            <span>!</span>
             <div class="covers">
+              <span></span>
               <span></span>
               <span></span>
               <span></span>
@@ -138,71 +139,58 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body p-5">
               <form>
-                <div class="form-group">
-                  <label for="first-name" class="col-form-label">First Name:</label>
-                  <input type="text" class="form-control shadow" id="first-name">
-                </div>
-  
-                <div class="form-group">
-                  <label for="last-name" class="col-form-label">Last Name:</label>
-                  <input type="text" class="form-control shadow" id="last-name">
-                </div>
-  
-                <div class="form-group">
-                  <label for="email_art" class="col-form-label">Email:</label>
-                  <input type="text" class="form-control shadow" id="email_art">
-                </div>
-  
-  
-                <div class="form-group">
-                  <label for="mobile_num" class="col-form-label">Mobile Number:</label>
-                  <input type="text" class="form-control shadow" id="mobile_num">
-                </div>
-                <div class="form-group">
-                  <label for="country"> Country:</label>
-                  <select class="form-control" id="country">
-                      <option value="">Select Country</option>
-                      <option value="Abkhazia">Abkhazia</option>
-                      <option value="Afghanistan">Afghanistan</option>
-                      <option value="Albania">Albania</option>
-                      <option value="Algeria">Algeria</option>
-                      <option value="American Samoa">American Samoa</option>
-                      <option value="Andorra">Andorra</option>
-                      <option value="Angola">Angola</option>
-                      <option value="Anguilla">Anguilla</option>
-                      <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-                      <option value="Argentina">Argentina</option>
-                      <option value="Armenia">Armenia</option>
-                      <option value="Aruba">Aruba</option>
-                      <option value="Australia">Australia</option>
+                  <div class="form-group">
+                      <label for="user">
+                      Username:
+                     </label>
+                      <input type="text" name="username" id="usernames" class="form-control">
+                     <h5 id="usercheck" style="color: red;">
+                      **Username is missing
+                      </h5>
+                      </div>
                       
-                  </select>
-                </div>
-  
-  
-                <div class="form-group">
-                  <label for="inputGroupFile01" class="form-label">File Upload:</label>
-                 
-             
-                <div class="input-group mb-3">
-                  <div class="custom-file">
-                    <input type="file" class="custom-file-input shadow" id="inputGroupFile01">
-                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                      <div class="form-group">
+                     <label for="user">
+                      Email:
+                     </label>
+                     <input type="email" name="email" id="email" required class="form-control">
+                      <small id="emailvalid" class="form-text
+                      text-muted invalid-feedback">
+                      Your email must be a valid email
+                      </small>
+                      </div>
+    
+    
+                  <div class="form-group">
+                    <label for="mobile_num" class="col-form-label">Mobile Number:</label>
+                    <input type="text" class="form-control " id="mobile_num">
+                  </div>
+                  
+    
+    
+                  <div class="form-group">
+                    <label for="file" class="form-label">File Upload:</label>
+                   
+               
+                  <div class="input-group mb-3">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input " id="file" onchange="return fileValidation()">
+                      <label class="custom-file-label" for="file">Choose file</label>
+                    </div>
                   </div>
                 </div>
-              </div>
-  
-                <div class="form-group">
-                  <label for="message-text" class="col-form-label ">Message:</label>
-                  <textarea class="form-control shadow" id="message-text"></textarea>
-                </div>
-              </form>
+    
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label ">Message:</label>
+                    <textarea class="form-control " id="message-text"></textarea>
+                  </div>
+                </form>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer pr-5">
               <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-              <button type="submit" class="btn btn-primary">PLACE QUOTE</button>
+              <button type="submit" id="submitbtn" class="large-blue-button">PLACE QUOTE</button>
             </div>
           </div>
         </div>

@@ -80,7 +80,7 @@ Version: 1.0.0
 
 .top-header-contact svg {
     font-size: 16px;
-    color: rgb(30, 42, 120);
+    color: #f9ad19;
     line-height: 1.125;
     margin-right: 10px;
 }
@@ -88,7 +88,7 @@ Version: 1.0.0
 .top-header-contact a {
     font-size: 13px;
     font-family: 'Rubik', sans-serif;
-    color: rgb(100, 117, 137);
+    color: #4f4f4f;
     font-weight: 500;
     line-height: 1.385;
 }
@@ -96,7 +96,7 @@ Version: 1.0.0
 .top-header-social svg {
     margin-right: 19px;
     font-size: 16px;
-    color: rgb(30, 42, 120);
+    color:#f9ad19;
     line-height: 1.125;
 }
 
@@ -129,11 +129,11 @@ Version: 1.0.0
 }
 
 .menu-area ul li.current-menu-item>a, .menu-area ul li a:hover {
-    color: rgb(34, 54, 69);
+    color: rgb(249, 173, 25);
 }
 
 .menu-area ul li a {
-    color: #647589;
+    color: #4f4f4f;
 }
 
 .menu-area ul li:last-child {
@@ -230,7 +230,7 @@ Version: 1.0.0
     left: 0;
     top: 0;
     z-index: 9999999;
-    background: #151C4C;
+    background: #f9ad19;
     height: 90px;
     padding: 0;
     animation: scroll-header-animation 0.5s linear;
@@ -241,12 +241,12 @@ Version: 1.0.0
 }
 
 .menu-header-dark .menu-area > ul > li > a {
-    color: #b5b5b5;
+    color: #4f4f4f;
 }
 
 .menu-header-dark a.large-blue-button.menu-button {
     background-color: #fff;
-    color: rgb(30, 42, 120);
+    color: #4f4f4f;
 }
 
 .menu-header-dark .mean-container a.meanmenu-reveal span {
@@ -294,7 +294,7 @@ section.banner {
 }
 
 .home-slider .slick-arrow {
-    color: rgb(30, 42, 120);
+    color: #4f4f4f;
     background-color: #fff;
 }
 
@@ -307,20 +307,20 @@ section.banner {
 }
 
 .home-slider .slick-arrow:hover {
-    background-color: rgb(30, 42, 120);
+    background-color: #f9ad19;
     color: #fff;
     transition: 0.3s;
 }
 
 .home-slider-2 .slick-arrow:hover {
-    color: rgb(30, 42, 120);
+    color:#f9ad19;
     background-color: #fff;
 }
 
 .banner-text h1 {
     font-size: 48px;
     font-family: 'Poppins', sans-serif;
-    color: rgb(30, 42, 120);
+    color: #f9ad19;
     font-weight: 700;
     line-height: 1.333;
     text-align: left;
@@ -362,7 +362,7 @@ section.banner {
 }
 
 .bottom-arrow svg {
-    fill: #1e2a78;
+    fill: #f9ad19;
     height: 47px;
     margin-bottom: 33px;
 }
@@ -406,7 +406,7 @@ section.banner {
 .banner-floating-text h1 {
     font-size: 180px;
     font-family: 'Poppins', sans-serif;
-    color: rgba(30, 42, 120, 0.2);
+    color:#f9ad192e;
     font-weight: 700;
 }
 
@@ -449,7 +449,7 @@ section.features-area {
 .f-description h1 {
     font-size: 28px;
     font-family: 'Poppins', sans-serif;
-    color: rgb(34, 54, 69);
+    color: #4f4f4f;
     font-weight: bold;
     margin-top: 22px;
     display: inline-block;
@@ -558,7 +558,7 @@ section.projects-area {
     content: "";
     width: 100%;
     height: 100%;
-    background: #1e2a78;
+    background: #f9ad19;
     opacity: 0;
     transition: 0.3s;
 }
@@ -789,12 +789,12 @@ section.review-area {
     color: rgb(255, 255, 255);
     font-weight: 700;
     padding: 12px 29px;
-    background: #1e2a78;
+    background:#f9ad19;
     border-radius: 3px;
 }
 
 .rating svg {
-    color: #ffc107;
+    color: #4f4f4f;
 }
 
 .review {
@@ -853,7 +853,7 @@ span.client-rating {
     color: rgb(255, 255, 255);
     font-weight: 700;
     padding: 12px 29px;
-    background: #1e2a78;
+    background: #f9ad19;
     border-radius: 40px;
     position: absolute;
     top: 0;
@@ -862,7 +862,7 @@ span.client-rating {
 }
 
 .client-rating svg {
-    color: #ffc107;
+    color: #4f4f4f;
 }
 
 /* slider settings */
@@ -911,7 +911,7 @@ section.footer-area {
 section.footer-area h2 {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
-    color: rgb(30, 42, 120);
+    color: #4f4f4f;
     font-weight: bold;
     margin-bottom: 45px;
 }
@@ -989,7 +989,7 @@ section.footer-area input[type="date"], section.footer-area input[type="datetime
 
 section.footer-area input[type="submit"], section.footer-area input[type="button"] {
     width: 30%;
-    background: #1e2a78;
+    background: #f9ad19;
     font-size: 14px;
     font-family: 'Rubik', sans-serif;
     color: rgb(255, 255, 255);
@@ -1002,7 +1002,7 @@ section.footer-area input[type="submit"], section.footer-area input[type="button
 }
 
 section.footer-area input[type="submit"]:hover {
-    background: #4554b4;
+    background: #4f4f4f;
     transition: 0.3s;
 }
 
@@ -1019,7 +1019,7 @@ section.footer-area input[type="submit"]:active {
 .footer-social svg {
     margin-right: 19px;
     font-size: 16px;
-    color: rgb(30, 42, 120);
+    color:#f9ad19;
     line-height: 1.125;
 }
 
@@ -1028,14 +1028,14 @@ a.go-to-top {
     top: 93%;
     left: calc(100% + 256px);
     color: white;
-    background: #1e2a78;
+    background: #f9ad19;
     padding: 12px 15px;
     font-size: 14px;
 }
 
 a.go-to-top:hover {
-    color: #1e2a78;
-    background: white;
+    color: #f9ad19;
+    background: #4f4f4f;
 }
 
 /* ------------- # Copyright Section ------------- */
@@ -1247,7 +1247,7 @@ section.home-02-services-area .service-text {
 .page-header h1.page-title {
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
-    color: rgba(30, 42, 120, 0.502);
+    color: #4f4f4f;
     font-weight: 700;
 }
 
@@ -1395,7 +1395,7 @@ section.our-team {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    background-color: rgb(30, 42, 120);
+    background-color: rgb(249, 173, 25);
     padding: 7px 23px;
     border-radius: 3px;
     color: #fff;
@@ -1413,12 +1413,12 @@ section.our-team {
 .custom-projects h1 {
     font-size: 35px;
     font-family: 'Poppins', sans-serif;
-    color: rgb(30, 42, 120);
+    color: #F9AD19;
     font-weight: 700;
 }
 
 .custom-project-button button {
-    background-color: rgb(30, 42, 120);
+    background-color: rgb(249, 173, 25);
     color: #fff;
     font-weight: 700;
     font-size: 25px;
@@ -1431,7 +1431,7 @@ section.our-team {
 }
 
 .custom-project-button button:hover {
-    background: #4554b4;
+    background: #4f4f4f;
     transition: 0.3s;
 }
 
@@ -1499,7 +1499,7 @@ section.our-team {
 
 .custom-projects-circle-4 {
     border-radius: 50%;
-    background-color: rgb(11, 179, 255);
+    background-color: #4f4f4f;
     opacity: 0.569;
     width: 100px;
     height: 100px;
@@ -2016,7 +2016,7 @@ section.contact-area {
 
 .address-container {
     padding: 47px 0;
-    background: #1E2A78;
+    background: #F9AD19;
 }
 
 .address-container>.row>div::after {
@@ -2097,7 +2097,7 @@ section.contact-area {
 }
 
 .card-header-expanded {
-    background: #1E2A78;
+    background: #F9AD19;
 }
 
 .card-header:first-child {
@@ -2108,7 +2108,7 @@ section.contact-area {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: 18px;
-    color: #647589;
+    color: #4f4f4f;
 }
 
 .card-header a[aria-expanded="true"] {
@@ -2128,7 +2128,7 @@ section.contact-area {
     content: "\f055";
     font-family: FontAwesome;
     font-size: 25px;
-    color: #1E2A78;
+    color: #F9AD19;
     float: right;
     transition: 0.3s;
 }
@@ -2444,7 +2444,7 @@ section.member-skills {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgb(30, 42, 120);
+    background-color: rgb(249, 173, 25);
     content: '';
     
    
