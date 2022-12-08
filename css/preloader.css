@@ -8,8 +8,8 @@
   color: white;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 250%;
-  background: linear-gradient(180deg, #1e2a78 0, #1e2a78 100%);
-  box-shadow: inset 0 5px 20px #4554b4;
+  background: linear-gradient(180deg, #f9ad19 0, #f8ba3d 100%);
+  box-shadow: inset 0 5px 20px #6d4b06;
   text-shadow: 5px 5px 5px rgba(0,0,0,0.3);
 }
 
@@ -27,8 +27,8 @@
 }
 
 .loader > span {
-  border-left: 1px solid #1e2a78;
-  border-right: 1px solid #4554b4;
+  border-left: 1px solid #f9ad19;
+  border-right: 1px solid #f8ba3d;
 }
 
 .covers {

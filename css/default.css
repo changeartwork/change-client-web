@@ -54,7 +54,7 @@ input:focus, textarea:focus, button:focus {
 
 .large-blue-button {
     border-radius: 5px;
-    background-color: rgb(30, 42, 120);
+    background-color:#f9ad19;
     font-size: 13px;
     font-weight: 500;
     font-family: 'Rubik', sans-serif;
@@ -74,7 +74,7 @@ input:focus, textarea:focus, button:focus {
 
 .large-blue-button:hover {
     color: rgb(255, 255, 255);
-    background: #4554b4;
+    background: #4f4f4f;
     transition: 0.3s;
 }
 
@@ -120,7 +120,7 @@ input:focus, textarea:focus, button:focus {
 .section-heading h2 {
     font-size: 35px;
     font-family: 'Poppins', sans-serif;
-    color: rgb(34, 54, 69);
+    color:#4f4f4f;
     font-weight: bold;
     line-height: 1.343;
 }
@@ -129,7 +129,7 @@ input:focus, textarea:focus, button:focus {
 .section-heading-center h1 {
     font-size: 35px;
     font-family: 'Poppins', sans-serif;
-    color: rgb(34, 54, 69);
+    color: #4f4f4f;
     font-weight: bold;
     line-height: 1.343;
 }
