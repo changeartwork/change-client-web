@@ -447,7 +447,7 @@ section.features-area {
 }
 
 .f-description h1 {
-    font-size: 28px;
+    font-size: 22px;
     font-family: 'Poppins', sans-serif;
     color: #4f4f4f;
     font-weight: bold;
@@ -2520,18 +2520,30 @@ section.member-skills {
     -webkit-box-align: start;
     height: 100%;
 }
-.modal.fade .modal-dialog.modal-dialog-slideout {
+
+/* right to left model popup */
+/* .modal.fade .modal-dialog.modal-dialog-slideout {
     -webkit-transform: translate(100%, 0)scale(1);
     transform: translate(100%, 0)scale(1);
     -webkit-box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
     box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
     height: 100%;
-}
+} */
 
 .modal-dialog-slideout {
     min-height: 100%;
     margin: 0 0 0 auto;
 }
+
+/* bottom to top model popup */
+.modal.fade .modal-dialog {
+    transform: translate3d(0, 100vh, 0);
+  }
+  
+  .modal.in .modal-dialog {
+    transform: translate3d(0, 0, 0);
+    
+  }
 
 
 .form-control
@@ -2541,4 +2553,12 @@ section.member-skills {
     border: 2px solid #f0f0f0;
   }
 
-  .modal-content{background-color: #f6f6f6;}
+  .modal-content
+  {background-color: #f6f6f6;
+    border-radius: 0;
+    border: 0;
+}
+
+.modal {top: auto;}
+
+.modal-open .modal{overflow-y: hidden;}
