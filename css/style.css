@@ -2530,19 +2530,17 @@ section.member-skills {
     height: 100%;
 } */
 
-.modal-dialog-slideout {
-    min-height: 100%;
-    margin: 0 0 0 auto;
+
+.modal.in .modal-dialog {
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    transform: translate3d(0, 0, 0);
 }
 
 /* bottom to top model popup */
 .modal.fade .modal-dialog {
     transform: translate3d(0, 100vh, 0);
-  }
-  
-  .modal.in .modal-dialog {
-    transform: translate3d(0, 0, 0);
-    
   }
 
 

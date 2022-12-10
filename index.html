@@ -8,11 +8,12 @@
 
     <title>CHANGE!</title>
     <meta name="description" content="CHANGE! | Digitizing and Vector Artwork Services">
-    <meta name="keywords" content="vector art images, vector graphics images, best vector art, vector graphics online, graphics website, vector templates, embroidery vector, vector digital art, make vector">
+    <meta name="keywords"
+        content="vector art images, vector graphics images, best vector art, vector graphics online, graphics website, vector templates, embroidery vector, vector digital art, make vector">
 
     <!-- favicon -->
     <link rel="apple-touch-icon" href="apple_touch_icon.png">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/logo/favicon.ico" type="image/x-icon">
 
     <!-- All CSS -->
     <link rel="stylesheet" href="css/all.min.css">
@@ -38,18 +39,17 @@
             <span>G</span>
             <span>E</span>
             <span>!</span>
-            
+
             <div class="covers">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-          </div>
+        </div>
     </div>
 
     <!-- =========================== 1. Top Header Section =========================================== -->
@@ -93,113 +93,104 @@
                         <ul>
                             <li class="current-menu-item">
                                 <a href="index.html">Home</a>
-                               
                             </li>
-                            <li ><a href="about.html">About</a>
-                               
+                            <li>
+                                <a href="about.html">About</a>
                             </li>
-                            <li><a href="services.html">Services</a></li>
-                            
+                            <li>
+                                <a href="services.html">Services</a></li>
                             <li>
                                 <a href="digitizing.html">Digitizing</a>
-                                
                             </li>
-
-                           
                             <li>
                                 <a href="vector.html">Vector Artwork</a>
-                                
                             </li>
-
                             <li>
                                 <a href="faq.html">Faq</a>
-                                
                             </li>
-
                             <li>
                                 <a href="contact.html">Contact Us</a>
-                                
                             </li>
-
-
-
                         </ul>
                     </nav>
                     <div class="mobile-menu"></div>
-                    <a href="getquote.html" class="large-blue-button menu-button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Get a quote</a>
+                    <a href="getquote.html" class="large-blue-button menu-button" data-toggle="modal"
+                        data-target="#exampleModal" data-whatever="@mdo">Get a quote</a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- =========================== 3. Banner Section =========================================== -->
-  
-    <div class="modal fade pr-0" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-slideout" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Request Form</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body p-5">
-            <form>
-                <div class="form-group">
-                    <label for="user">
-                    Username:
-                   </label>
-                    <input type="text" name="username" id="usernames" class="form-control">
-                   <h5 id="usercheck" style="color: red;">
-                    **Username is missing
-                    </h5>
-                    </div>
-                    
-                    <div class="form-group">
-                   <label for="user">
-                    Email:
-                   </label>
-                   <input type="email" name="email" id="email" required class="form-control">
-                    <small id="emailvalid" class="form-text
+
+    <div class="modal fade pr-0" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-slideout" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Change Request Form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-5">
+                    <form>
+                        <div class="form-group">
+                            <label for="user">
+                                Name:
+                            </label>
+                            <input type="text" name="username" id="usernames" required class="form-control">
+                            <small id="usercheck" style="color: #FAAA16;">
+                                Name is missing
+                            </small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user">
+                                Email:
+                            </label>
+                            <input type="email" name="email" id="email" required class="form-control">
+                            <small id="emailvalid" class="form-text
                     text-muted invalid-feedback">
-                    Your email must be a valid email
-                    </small>
-                    </div>
-  
-  
-                <div class="form-group">
-                  <label for="mobile_num" class="col-form-label">Mobile Number:</label>
-                  <input type="text" class="form-control " id="mobile_num">
+                                Your email must be a valid email
+                            </small>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="mobile_num" class="col-form-label">Contact Number:</label>
+                            <input type="text" class="form-control " id="mobile_num">
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="file" class="form-label">File Upload:</label>
+
+
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input " id="file"
+                                        onchange="return fileValidation()">
+                                    <label class="custom-file-label" for="file">Choose file</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label ">Request Details:</label>
+                            <textarea class="form-control " id="message-text"></textarea>
+                        </div>
+                    </form>
                 </div>
-                
-  
-  
-                <div class="form-group">
-                  <label for="file" class="form-label">File Upload:</label>
-                 
-             
-                <div class="input-group mb-3">
-                  <div class="custom-file">
-                    <input type="file" class="custom-file-input " id="file" onchange="return fileValidation()">
-                    <label class="custom-file-label" for="file">Choose file</label>
-                  </div>
+                <div class="modal-footer pr-5">
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                    <button type="submit" id="submitbtn" class="large-blue-button border-0">PLACE QUOTE</button>
                 </div>
-              </div>
-  
-                <div class="form-group">
-                  <label for="message-text" class="col-form-label ">Message:</label>
-                  <textarea class="form-control " id="message-text"></textarea>
-                </div>
-              </form>
-          </div>
-          <div class="modal-footer pr-5">
-            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-            <button type="submit" id="submitbtn" class="large-blue-button border-0">PLACE QUOTE</button>
-          </div>
+            </div>
         </div>
-      </div>
     </div>
-<!-- Side Modal Bottom Right Danger-->
+    <!-- Side Modal Bottom Right Danger-->
     <section class="banner">
 
         <div class="shape-03 text-center">
@@ -218,19 +209,19 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="banner-text">
                                 <h1>Premier Artwork Services for any Project</h1>
-                                <p>Our talented master hands will help you to create the project of any kind and difficulty level. Push the button below to contact your personal manager.
+                                <p>Our talented master hands will help you to create the project of any kind and
+                                    difficulty level. Push the button below to contact your personal manager.
                                     We will get back to you in 15 to 30 minutes time.
                                 </p>
-                                <a href="getquote.html" class="large-blue-button  d-block  d-lg-none" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Get a quote</a>
+                                <a href="getquote.html" class="large-blue-button  d-block  d-lg-none"
+                                    data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Get a quote</a>
                             </div>
                         </div>
                         <div class="col-xl-5 col-lg-6 col-md-6">
                             <div class="banner-image">
-                                <img src="images/banner/home_banner.png" 
-                                    alt="Change">
+                                <img src="images/banner/home_banner.png" alt="Change">
                                 <div class="shape-0">
-                                    <img src="images/shapes/shape-0.png"
-                                        alt="Change">
+                                    <img src="images/shapes/shape-0.png" alt="Change">
                                 </div>
                                 <div class="shape-02">
                                     <img src="images/shapes/shape-02.png" alt="Change">
@@ -250,9 +241,11 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="banner-text wow animate__animated animate__fadeInDown">
                                 <h1>Premier Artwork Services for any Project</h1>
-                                <p>Our talented master hands will help you to create the project of any kind and difficulty level. Push the button below to contact your personal manager.
+                                <p>Our talented master hands will help you to create the project of any kind and
+                                    difficulty level. Push the button below to contact your personal manager.
                                     We will get back to you in 15 to 30 minutes time.</p>
-                               <a href="getquote.html" class="large-blue-button  d-block  d-lg-none" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Get a quote</a>
+                                <a href="getquote.html" class="large-blue-button  d-block  d-lg-none"
+                                    data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Get a quote</a>
                             </div>
                         </div>
                         <div class="col-xl-5 col-lg-6 col-md-6">
@@ -273,7 +266,8 @@
         </div>
 
         <div class="shape-01">
-            <img src="images/shapes/shape-01.png" class="wow animate__animated animate__pulse animate__infinite" alt="Change">
+            <img src="images/shapes/shape-01.png" class="wow animate__animated animate__pulse animate__infinite"
+                alt="Change">
         </div>
 
         <div class="bottom-arrow text-center">
@@ -330,24 +324,27 @@
     <section class="features-area p-0" id="area">
         <div class="section-heading-center text-center bg-grey my-5 p-4">
             <h1>DIGITIZING, SEWOUT SWATCHES, VECTOR ARTWORK, COLOR SEPERATION AND MORE</h1>
-            <p>We do all sort of services you could possibly find out the web. Thanks to the combination of people’s talent, latest technologies and trends on the market.
-                 Share with us your needs and we will come up with the working solution in 1 hour time.</p>
+            <p>We do all sort of services you could possibly find out the web. Thanks to the combination of people’s
+                talent, latest technologies and trends on the market.
+                Share with us your needs and we will come up with the working solution in 1 hour time.</p>
         </div>
 
         <div class="container">
 
- <div class="section-heading">
+            <div class="section-heading">
                 <h1>Our Artwork exceeds your expectations</h1>
                 <p>What do you need to make a perfect mockup? First, do all measurements or placement.
-                     Once you did it, we use your data and start considering how to implement your project in real time.</p>
+                    Once you did it, we use your data and start considering how to implement your project in real time.
+                </p>
             </div>
 
             <div class="section-heading">
                 <h1>Feature ARTWORK Services</h1>
-               
+
             </div>
             <div class="row">
-                <div style="visibility: visible; animation-name: fadeInLeft;" class="col-md-6 col-sm-6 wow animate__ animate__fadeInLeft animated">
+                <div style="visibility: visible; animation-name: fadeInLeft;"
+                    class="col-md-6 col-sm-6 wow animate__ animate__fadeInLeft animated">
                     <div class="feature-box">
                         <div class="f-point">
                             <h1>01&nbsp;</h1>
@@ -358,15 +355,19 @@
                             </div>
                             <div class="f-description">
                                 <h1>DIGITIZING</h1>
-                                <p>Our objective have always been to accelerate technology advances and upgrading with latest machines to deliver the quality 
-                                    Right First Time in fast turnaround of 4 hours with Sew-out Swatches.. 
-                                    We provide you with a design with no thread breakage and no meaningless stitches helps in saving 
-                                    production cost for our clients add depth to your artwork, with intricate detailing and colors.</p>
+                                <p>Our objective have always been to accelerate technology advances and upgrading with
+                                    latest machines to deliver the quality
+                                    Right First Time in fast turnaround of 4 hours with Sew-out Swatches..
+                                    We provide you with a design with no thread breakage and no meaningless stitches
+                                    helps in saving
+                                    production cost for our clients add depth to your artwork, with intricate detailing
+                                    and colors.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div style="visibility: visible; animation-name: fadeInUp;" class="col-md-6 col-sm-6 wow animate__ animate__fadeInUp animated">
+                <div style="visibility: visible; animation-name: fadeInUp;"
+                    class="col-md-6 col-sm-6 wow animate__ animate__fadeInUp animated">
                     <div class="feature-box">
                         <div class="f-point">
                             <h1>02</h1>
@@ -377,14 +378,17 @@
                             </div>
                             <div class="f-description">
                                 <h1>VECTOR ARTWORK</h1>
-                                <p>We cater to the custom-decorating garment and promotional products industries, providing the following services.
-                                     Redraws for imprinting in various methods.
-                                     Web images, logos, jpegs, faxes, scans &amp; hand- drawn sketches can be converted into vector art. </p>
+                                <p>We cater to the custom-decorating garment and promotional products industries,
+                                    providing the following services.
+                                    Redraws for imprinting in various methods.
+                                    Web images, logos, jpegs, faxes, scans &amp; hand- drawn sketches can be converted
+                                    into vector art. </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div style="visibility: visible; animation-name: fadeInRight;" class="col-md-6 col-sm-6 wow animate__ animate__fadeInRight animated">
+                <div style="visibility: visible; animation-name: fadeInRight;"
+                    class="col-md-6 col-sm-6 wow animate__ animate__fadeInRight animated">
                     <div class="feature-box">
                         <div class="f-point">
                             <h1>03</h1>
@@ -395,15 +399,18 @@
                             </div>
                             <div class="f-description">
                                 <h1>DESIGN CREATIONS</h1>
-                                <p>Our ability to transform a message into a visual brand experience is a product of understanding, 
-                                    thinking and delivering designs which are creative, business savvy and of uncompromised quality.</p>
+                                <p>Our ability to transform a message into a visual brand experience is a product of
+                                    understanding,
+                                    thinking and delivering designs which are creative, business savvy and of
+                                    uncompromised quality.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
 
-                <div style="visibility: visible; animation-name: fadeInRight;" class="col-md-6 col-sm-6 wow animate__ animate__fadeInRight animated">
+                <div style="visibility: visible; animation-name: fadeInRight;"
+                    class="col-md-6 col-sm-6 wow animate__ animate__fadeInRight animated">
                     <div class="feature-box">
                         <div class="f-point">
                             <h1>04</h1>
@@ -414,14 +421,17 @@
                             </div>
                             <div class="f-description">
                                 <h1>GRAPHIC DESIGNS</h1>
-                                <p>We're known for design. That's how you know you'll receive inspired, effective, intelligent work for your brand. Our designs are visually stunning, and move your customers to action. 
-                                    </p>
+                                <p>We're known for design. That's how you know you'll receive inspired, effective,
+                                    intelligent work for your brand. Our designs are visually stunning, and move your
+                                    customers to action.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div style="visibility: visible; animation-name: fadeInRight;" class="col-md-6 col-sm-6 wow animate__ animate__fadeInRight animated">
+                <div style="visibility: visible; animation-name: fadeInRight;"
+                    class="col-md-6 col-sm-6 wow animate__ animate__fadeInRight animated">
                     <div class="feature-box">
                         <div class="f-point">
                             <h1>05</h1>
@@ -432,13 +442,15 @@
                             </div>
                             <div class="f-description">
                                 <h1>LOYALTY PROGRAM</h1>
-                                <p>For those customers, who work with us for years we have a special Loyalty program with discounts and a bunch of other bonus.</p>
+                                <p>For those customers, who work with us for years we have a special Loyalty program
+                                    with discounts and a bunch of other bonus.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div style="visibility: visible; animation-name: fadeInRight;" class="col-md-6 col-sm-6 wow animate__ animate__fadeInRight animated">
+                <div style="visibility: visible; animation-name: fadeInRight;"
+                    class="col-md-6 col-sm-6 wow animate__ animate__fadeInRight animated">
                     <div class="feature-box">
                         <div class="f-point">
                             <h1>06</h1>
@@ -449,7 +461,8 @@
                             </div>
                             <div class="f-description">
                                 <h1>PROTECTED DATA</h1>
-                                <p>We take care of our clients. Please don’t worry about any data you provide us. We guarantee that all the data remains confidential</p>
+                                <p>We take care of our clients. Please don’t worry about any data you provide us. We
+                                    guarantee that all the data remains confidential</p>
                             </div>
                         </div>
                     </div>
@@ -464,14 +477,22 @@
     <div class="companies d-flex align-items-center">
         <div class="container">
             <div class="row justify-content-between companies-logo">
-                <div class="mx-auto"><img src="images/logo/company-logo/logo-kupa.png" class="mx-auto my-auto" alt="Change"></div>
-                <div class="mx-auto"><img src="images/logo/company-logo/logo-tarabara.png" class="mx-auto my-auto" alt="Change"></div>
-                <div class="mx-auto"><img src="images/logo/company-logo/logo-shiram.png" class="mx-auto my-auto" alt="Change"></div>
-                <div class="mx-auto"><img src="images/logo/company-logo/logo-codex.png" class="mx-auto my-auto" alt="Change"></div>
-                <div class="mx-auto"><img src="images/logo/company-logo/logo-kupa.png" class="mx-auto my-auto" alt="Change"></div>
-                <div class="mx-auto"><img src="images/logo/company-logo/logo-tarabara.png" class="mx-auto my-auto" alt="Change"></div>
-                <div class="mx-auto"><img src="images/logo/company-logo/logo-shiram.png" class="mx-auto my-auto" alt="Change"></div>
-                <div class="mx-auto"><img src="images/logo/company-logo/logo-codex.png" class="mx-auto my-auto" alt="Change"></div>
+                <div class="mx-auto"><img src="images/logo/company-logo/logo-kupa.png" class="mx-auto my-auto"
+                        alt="Change"></div>
+                <div class="mx-auto"><img src="images/logo/company-logo/logo-tarabara.png" class="mx-auto my-auto"
+                        alt="Change"></div>
+                <div class="mx-auto"><img src="images/logo/company-logo/logo-shiram.png" class="mx-auto my-auto"
+                        alt="Change"></div>
+                <div class="mx-auto"><img src="images/logo/company-logo/logo-codex.png" class="mx-auto my-auto"
+                        alt="Change"></div>
+                <div class="mx-auto"><img src="images/logo/company-logo/logo-kupa.png" class="mx-auto my-auto"
+                        alt="Change"></div>
+                <div class="mx-auto"><img src="images/logo/company-logo/logo-tarabara.png" class="mx-auto my-auto"
+                        alt="Change"></div>
+                <div class="mx-auto"><img src="images/logo/company-logo/logo-shiram.png" class="mx-auto my-auto"
+                        alt="Change"></div>
+                <div class="mx-auto"><img src="images/logo/company-logo/logo-codex.png" class="mx-auto my-auto"
+                        alt="Change"></div>
             </div>
         </div>
     </div>
@@ -490,9 +511,8 @@
                 <div class="col-xl-4 col-md-6 mx-auto wow animate__animated animate__slideInUp">
                     <div class="service-box">
                         <div class="service-image">
-                            <svg data-name="Services We Provide"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53"
-                                height="53" viewBox="0 0 53 53">
+                            <svg data-name="Services We Provide" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="53" height="53" viewBox="0 0 53 53">
                                 <g id="_1" data-name="1">
                                     <g id="item">
                                         <image id="meeting" width="53" height="53"
@@ -503,7 +523,8 @@
                         </div>
                         <div class="service-text">
                             <h1>PROMOTIONAL PRODUCTS</h1>
-                            <p>The Production required high resolution files all the time and we CHANGE! serves clean and neat vector artwork conversion within 4 hours turnaround time.</p>
+                            <p>The Production required high resolution files all the time and we CHANGE! serves clean
+                                and neat vector artwork conversion within 4 hours turnaround time.</p>
                         </div>
                     </div>
                 </div>
@@ -523,7 +544,8 @@
                         </div>
                         <div class="service-text">
                             <h1>EMBROIDERY</h1>
-                            <p>We run a sew out swatches of all your files(using tajima machine) to make sure the tape is good with the actual fabric and not only the computer monitor.</p>
+                            <p>We run a sew out swatches of all your files (using tajima machine) to make sure the tape
+                                is good with the actual fabric and not only the computer monitor to provide fully customer satisfied result.</p>
                         </div>
                     </div>
                 </div>
@@ -542,7 +564,8 @@
                         </div>
                         <div class="service-text">
                             <h1>PRINTING</h1>
-                            <p>CHANGE! Repairs your existing printing files or create from scratch to beautiful documents and marketing materials.</p>
+                            <p>CHANGE! Repairs your existing printing files which is not in good use or creates from scratch to beautiful
+                                documents and also marketing materials for your personal or business usage.</p>
                         </div>
                     </div>
                 </div>
@@ -562,7 +585,8 @@
                         </div>
                         <div class="service-text">
                             <h1>DECORATED</h1>
-                            <p>Any kind of Printing requires the design and we deliver the same with high-quality decorated graphics.</p>
+                            <p>Any kind of Printing requires the design and we deliver the same with high-quality
+                                decorated graphics.</p>
                         </div>
                     </div>
                 </div>
@@ -581,7 +605,7 @@
                         </div>
                         <div class="service-text">
                             <h1>SIGNS</h1>
-                            <p>CHANGE! Provides high quality vector files within 4 hours turnaround time.</p>
+                            <p>CHANGE! Provides high quality vector files within 4 hours turn around time to complete.</p>
                         </div>
                     </div>
                 </div>
@@ -600,12 +624,12 @@
                         </div>
                         <div class="service-text">
                             <h1>AWARDS</h1>
-                            <p>CHANGE! Provides the engraving versions at the Right First Time.</p>
+                            <p>CHANGE! Provides the engraving versions at the Right First Time for momentums.</p>
                         </div>
                     </div>
                 </div>
 
-                
+
             </div>
         </div>
     </section>
@@ -958,7 +982,8 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center"><a href="portfolio.html" class="wow animate__animated animate__flipInX large-blue-button">Load More</a></div>
+            <div class="text-center"><a href="portfolio.html"
+                    class="wow animate__animated animate__flipInX large-blue-button">Load More</a></div>
         </div>
     </section>
 
@@ -1104,7 +1129,9 @@
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing dolor sit amet.</p>
                         </div>
                     </div>
-                    <a href="contact.html" class="wow animate__animated animate__flipInX large-blue-button mt-40 speciality-button">Contact Us</a>
+                    <a href="contact.html"
+                        class="wow animate__animated animate__flipInX large-blue-button mt-40 speciality-button">Contact
+                        Us</a>
                 </div>
             </div>
         </div>
@@ -1112,7 +1139,7 @@
 
     <!-- =========================== 9. Post Section =========================================== -->
 
-    
+
 
     <!-- =========================== 10. Review Section =========================================== -->
 
@@ -1305,7 +1332,7 @@
                         <li><a href="vector.html">Vector Artwork</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        
+
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-9 col-12">
@@ -1352,95 +1379,94 @@
 
 
     <script>
-   // Document is ready
-$(document).ready(function () {
-// Validate Username
-$("#usercheck").hide();
-let usernameError = true;
-$("#usernames").keyup(function () {
-	validateUsername();
-});
+        // Document is ready
+        $(document).ready(function () {
+            // Validate Username
+            $("#usercheck").hide();
+            let usernameError = true;
+            $("#usernames").keyup(function () {
+                validateUsername();
+            });
 
-function validateUsername() {
-	let usernameValue = $("#usernames").val();
-	if (usernameValue.length == "") {
-	$("#usercheck").show();
-	usernameError = false;
-	return false;
-	} else if (usernameValue.length < 3 || usernameValue.length > 10) {
-	$("#usercheck").show();
-	$("#usercheck").html("**length of username must be between 3 and 10");
-	usernameError = false;
-	return false;
-	} else {
-	$("#usercheck").hide();
-	}
-}
+            function validateUsername() {
+                let usernameValue = $("#usernames").val();
+                if (usernameValue.length == "") {
+                    $("#usercheck").show();
+                    usernameError = false;
+                    return false;
+                } else if (usernameValue.length < 3 || usernameValue.length > 30) {
+                    $("#usercheck").show();
+                    $("#usercheck").html("Length of name must be between 3 and 30");
+                    usernameError = false;
+                    return false;
+                } else {
+                    $("#usercheck").hide();
+                }
+            }
 
-// Validate Email
-const email = document.getElementById("email");
-email.addEventListener("blur", () => {
-	let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
-	let s = email.value;
-	if (regex.test(s)) {
-	email.classList.remove("is-invalid");
-	emailError = true;
-	} else {
-	email.classList.add("is-invalid");
-	emailError = false;
-	}
-});
+            // Validate Email
+            const email = document.getElementById("email");
+            email.addEventListener("blur", () => {
+                let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+                let s = email.value;
+                if (regex.test(s)) {
+                    email.classList.remove("is-invalid");
+                    emailError = true;
+                } else {
+                    email.classList.add("is-invalid");
+                    emailError = false;
+                }
+            });
 
-function fileValidation() {
-            var fileInput =
-                document.getElementById('file');
-             
-            var filePath = fileInput.value;
-         
-            // Allowing file type
-            var allowedExtensions =
-                    /(\.jpg|\.jpeg|\.png|\.gif)$/i;
-             
-            if (!allowedExtensions.exec(filePath)) {
-                alert('Invalid file type');
-                fileInput.value = '';
-                return false;
-            }
-            else
-            {
-             
-                // Image preview
-                if (fileInput.files && fileInput.files[0]) {
-                    var reader = new FileReader();
-                    reader.onload = function(e) {
-                        document.getElementById(
-                            'imagePreview').innerHTML =
-                            '<img src="' + e.target.result
-                            + '"/>';
-                    };
-                     
-                    reader.readAsDataURL(fileInput.files[0]);
-                }
-            }
-        }
+            function fileValidation() {
+                var fileInput =
+                    document.getElementById('file');
 
+                var filePath = fileInput.value;
+
+                // Allowing file type
+                var allowedExtensions =
+                    /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+
+                if (!allowedExtensions.exec(filePath)) {
+                    alert('Invalid file type');
+                    fileInput.value = '';
+                    return false;
+                }
+                else {
+
+                    // Image preview
+                    if (fileInput.files && fileInput.files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                            document.getElementById(
+                                'imagePreview').innerHTML =
+                                '<img src="' + e.target.result
+                                + '"/>';
+                        };
+
+                        reader.readAsDataURL(fileInput.files[0]);
+                    }
+                }
+            }
 
 
-// Submit button
-$("#submitbtn").click(function () {
-	validateUsername();
-	fileValidation();
-	validateEmail();
-	if (
-	usernameError == true &&
-	emailError == true
-	) {
-	return true;
-	} else {
-	return false;
-	}
-});
-});
+
+            // Submit button
+            $("#submitbtn").click(function () {
+                validateUsername();
+                fileValidation();
+                validateEmail();
+                if (
+                    usernameError == true &&
+                    emailError == true
+                ) {
+                    return true;
+                } else {
+                    return false;
+                }
+            });
+        });
 
 
     </script>
