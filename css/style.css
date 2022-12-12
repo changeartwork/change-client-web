@@ -2519,6 +2519,7 @@ section.member-skills {
     align-items: start;
     -webkit-box-align: start;
     height: 100%;
+    margin-top: 60px;
 }
 
 /* right to left model popup */
@@ -2560,3 +2561,6 @@ section.member-skills {
 .modal {top: auto;}
 
 .modal-open .modal{overflow-y: hidden;}
+.service-box {
+    min-height: 320px;
+  }

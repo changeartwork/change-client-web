@@ -141,9 +141,7 @@
     .f-point {
         display: none;
     }
-    .feature {
-        text-align: center;
-    }
+   
     .companies img {
         width: 130px;
     }
@@ -331,7 +329,7 @@
         margin-left: inherit;
     }
     .top-header-contact {
-        margin-left: 33px;
+        margin-left: 20px;
         margin-right: 0;
     }
     .menu-header {
@@ -367,7 +365,7 @@
         font-size: 17px;
     }
     .feature {
-        width: 234px;
+        width: 300px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 25px;
