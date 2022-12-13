@@ -248,6 +248,9 @@
     .member-experience-area {
         padding: 60px 0;
     }
+
+    .top-header-contact{margin-right: 15px;}
+
 }
 
 @media screen and (max-width: 767.5px) {
@@ -329,7 +332,7 @@
         margin-left: inherit;
     }
     .top-header-contact {
-        margin-left: 20px;
+        margin-left: 15px;
         margin-right: 0;
     }
     .menu-header {
@@ -591,7 +594,7 @@
 
 @media screen and (max-width: 374.5px) {
     .top-header-contact {
-        margin-left: 10px;
+        margin-left: 4px;
     }
     .companies img {
         width: 170px;
