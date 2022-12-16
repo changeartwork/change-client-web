@@ -75,7 +75,7 @@ Version: 1.0.0
 
 .top-header-contact {
     display: inline;
-    margin-right: 20px;
+    margin-right: 8px;
 }
 
 .top-header-contact svg {
@@ -2564,3 +2564,8 @@ section.member-skills {
 .service-box {
     min-height: 320px;
   }
+
+
+  .modal-body {
+    padding: 45px;
+}
