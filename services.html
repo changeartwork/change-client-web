@@ -28,8 +28,28 @@
 </head>
 
 <body>
-   
-  
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <span>C</span>
+            <span>H</span>
+            <span>A</span>
+            <span>N</span>
+            <span>G</span>
+            <span>E</span>
+            <span>!</span>
+            <div class="covers">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
     <!-- =========================== 1. Top Header Section =========================================== -->
 
     <div class="top-header d-flex align-items-center">
@@ -37,12 +57,12 @@
             <div class="row justify-content-between">
                 <div class="col-xl-4 col-lg-5 col-md-6 col-12">
                     <div class="top-header-contact">
-                        <a href="tel:(844) 952 7324">
+                        <a href="tel:+1(718)73493">
                             <i class="fas fa-phone-alt"></i>(844) 952 7324
                         </a>
                     </div>
                     <div class="top-header-contact">
-                        <a href="mailto:order@changeartwork.com">
+                        <a href="mailto:info@example.com">
                             <i class="fas fa-envelope"></i>order@changeartwork.com
                         </a>
                     </div>
@@ -60,7 +80,120 @@
 
     <!-- =========================== 2. Menu Section =========================================== -->
 
-    <div id="header"></div>
+    <div class="menu-header d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-2 d-flex align-items-center">
+                    <a href="index.html"><img class="logo" src="images/logo/site-logo/logo.png" alt="Change"></a>
+                </div>
+                <div class="col-10 d-flex align-items-center">
+                  <nav id="mobile-menu" class="menu-area d-lg-flex align-items-center ml-auto">
+                      <ul>
+                          <li>
+                              <a href="index.html">Home</a>
+                             
+                          </li>
+                          <li ><a href="about.html">About</a>
+                             
+                          </li>
+                          <li class="current-menu-item"><a href="services.html">Services</a></li>
+                          
+                          <li>
+                              <a href="digitizing.html">Digitizing</a>
+                              
+                          </li>
+
+                         
+                          <li>
+                              <a href="vector.html">Vector Artwork</a>
+                              
+                          </li>
+
+                          <li>
+                              <a href="faq.html">Faq</a>
+                              
+                          </li>
+
+                          <li>
+                              <a href="contact.html">Contact Us</a>
+                              
+                          </li>
+
+
+
+                      </ul>
+                  </nav>
+                  <div class="mobile-menu"></div>
+                  <a href="getquote.html" class="large-blue-button menu-button" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Get a quote</a>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade pr-0" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-slideout" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Request Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-5">
+            <form>
+                <div class="form-group">
+                    <label for="user">
+                    Username:
+                   </label>
+                    <input type="text" name="username" id="usernames" class="form-control">
+                   <h5 id="usercheck" style="color: #FAAA16;;">
+                    **Username is missing
+                    </h5>
+                    </div>
+                    
+                    <div class="form-group">
+                   <label for="user">
+                    Email:
+                   </label>
+                   <input type="email" name="email" id="email" required class="form-control">
+                    <small id="emailvalid" class="form-text
+                    text-muted invalid-feedback">
+                    Your email must be a valid email
+                    </small>
+                    </div>
+  
+  
+                <div class="form-group">
+                  <label for="mobile_num" class="col-form-label">Mobile Number:</label>
+                  <input type="text" class="form-control " id="mobile_num">
+                </div>
+                
+  
+  
+                <div class="form-group">
+                  <label for="file" class="form-label">File Upload:</label>
+                 
+             
+                <div class="input-group mb-3">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input " id="file" onchange="return fileValidation()">
+                    <label class="custom-file-label" for="file">Choose file</label>
+                  </div>
+                </div>
+              </div>
+  
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label ">Message:</label>
+                  <textarea class="form-control " id="message-text"></textarea>
+                </div>
+              </form>
+          </div>
+          <div class="modal-footer pr-5">
+            <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+            <button type="submit" id="submitbtn" class="large-blue-button border-0">PLACE QUOTE</button>
+          </div>
+        </div>
+      </div>
+    </div>
 <!-- Side Modal Bottom Right Danger-->
     <!-- =========================== 3. Page Header Section =========================================== -->
 
@@ -363,14 +496,6 @@
         new WOW().init();
     </script>
     <script src="js/main.js"></script>
-
-
-    <script> 
-      $(function(){
-        $("#header").load("header.html"); 
-       
-      });
-      </script> 
 </body>
 
 </html>
