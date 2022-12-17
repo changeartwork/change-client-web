@@ -20,7 +20,7 @@ a.meanmenu-reveal {
 	position: relative;
 	padding: 4px 0;
 	min-height: 42px;
-	z-index: 1024;
+	z-index: 999999;
 }
 
 .mobile-menu.mean-container {

@@ -96,13 +96,6 @@
     .menu-area ul li {
         font-size: 12px;
       }
-      .form-group {
-        margin-bottom: 5px;
-    }
-
-    .modal-body {
-        padding: 15px;
-    }
 
 
 }
@@ -258,14 +251,6 @@
 
     .top-header-contact{margin-right: 15px;}
 
-    .form-group {
-        margin-bottom: 5px;
-    }
-
-    .modal-body {
-        padding: 15px;
-    }
-
 }
 
 @media screen and (max-width: 767.5px) {
@@ -329,15 +314,6 @@
     .article-body, .article-navigation {
         padding: 60px 0;
     }
-
-    .form-group {
-        margin-bottom: 5px;
-    }
-
-    .modal-body {
-        padding: 15px;
-    }
-
 }
 
 @media screen and (max-width: 575.5px) {
@@ -356,7 +332,7 @@
         margin-left: inherit;
     }
     .top-header-contact {
-        margin-left: 1px;
+        margin-left: 15px;
         margin-right: 0;
     }
     .menu-header {
@@ -549,22 +525,6 @@
         transform: rotate(-45deg);
         box-shadow: -4px 4px 4px rgb(0 0 0 / 16%);
     }
-    .modal-body {
-        padding: 16px;
-    }
-
-    .modal.fade.show .modal-dialog.modal-dialog-slideout{margin-top: 1px;}
-
-    .form-group {
-        margin-bottom: 2px;
-    }
-
-    .modal {
-        top: 26px;
-    }
-    .menu-header.menu-header-dark {z-index: 1024;}
-
-    .mean-container .mean-bar {z-index: 1024;}
 }
 
 @media screen and (max-width: 400px) {
