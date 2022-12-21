@@ -181,17 +181,17 @@
   });
 
   // team-member.html 
-  $(document).on('scroll', function () {
-    if ($(this).scrollTop() > $('.experiences .shape').position().top) {
-      $('.experience-box .shape .before').css({ animationName: 'member-skills', animationDuration: '2s' });
-      $('.experience-box .shape .after').css({ animationName: 'member-skills', animationDuration: '2s' });
-    }
-  })
-  $(document).on('scroll', function () {
-    if ($(this).scrollTop() > $('.skillbar').position().top) {
-      $('.skillbar').css({ animationName: 'skillbar', animationDuration: '2s' })
-    }
-  })
+  // $(document).on('scroll', function () {
+  //   if ($(this).scrollTop() > $('.experiences .shape').position().top) {
+  //     $('.experience-box .shape .before').css({ animationName: 'member-skills', animationDuration: '2s' });
+  //     $('.experience-box .shape .after').css({ animationName: 'member-skills', animationDuration: '2s' });
+  //   }
+  // })
+  // $(document).on('scroll', function () {
+  //   if ($(this).scrollTop() > $('.skillbar').position().top) {
+  //     $('.skillbar').css({ animationName: 'skillbar', animationDuration: '2s' })
+  //   }
+  // })
 
 })(jQuery);
 
