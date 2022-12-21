@@ -67,7 +67,8 @@ Version: 1.0.0
 /* ##################### 1. index.html ##################### */
 
 /* ------------- # Top Header Section ------------- */
-
+p{     font-size: 16px;
+    font-family: 'Rubik', sans-serif;}
 .top-header {
     height: 50px;
     background-color: rgb(246, 246, 246)
@@ -2519,7 +2520,7 @@ section.member-skills {
     align-items: start;
     -webkit-box-align: start;
     height: 100%;
-    margin-top: 60px;
+    margin-top: 45px;
 }
 
 /* right to left model popup */
@@ -2564,3 +2565,80 @@ section.member-skills {
 .service-box {
     min-height: 320px;
   }
+
+
+  .card1{
+    height: 60px;
+   
+    position: relative;
+  }
+  .card1 input[type="radio"]{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 7px 7px 15px rgba(2,28,53,0.08);
+    cursor: pointer;
+    outline: none;
+    border: 3px solid #000000;
+  }
+  .card1 input[type="radio"]:before {
+    content: "";
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    background-color: #f9fafd;
+    border: 1px solid #e2e6f3;
+    border-radius: 50%;
+    top: 19px;
+    right: 13px;
+
+  }
+.card1 input[type="radio"]:after {
+    content: "";
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    background-color: transparent;
+    border-radius: 50%;
+    top: 23.5px;
+    right: 17.4px;
+}
+  .card1 label{
+    position: absolute;
+    cursor: pointer;
+  }
+  .card1 h5{
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin: 24px 0 20px 12px;
+  }
+  .card1 h2{
+    font-size: 28px;
+  }
+  .card1 span{
+    font-weight: 400;
+    font-size: 18px;
+    color: #7b7b93;
+  }
+  .card1 input[type="radio"]:hover{
+    transform: scale(1.05);
+  }
+  .card1 input[type="radio"]:checked{
+    border: 3px solid #f9ad19;
+  }
+  .card1 input[type="radio"]:checked:after{
+    background-color: #f9ad19;
+  }
+  
+  .custom-file-label{height: calc(1.5em + 0.75rem + 7px);}
+
+  .custom-file-label::after{height: calc(1.5em + 0.75rem + 7px);}
+
+  .modal-body {
+    padding: 40px;
+}

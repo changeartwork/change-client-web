@@ -314,6 +314,10 @@
     .article-body, .article-navigation {
         padding: 60px 0;
     }
+    .modal-body {
+        padding: 10px;
+    }
+
 }
 
 @media screen and (max-width: 575.5px) {
@@ -525,6 +529,10 @@
         transform: rotate(-45deg);
         box-shadow: -4px 4px 4px rgb(0 0 0 / 16%);
     }
+
+    .modal-body {
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -590,6 +598,11 @@
     .job-intro {
         display: inherit;
     }
+
+
+    .modal-body {
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 374.5px) {
@@ -598,5 +611,10 @@
     }
     .companies img {
         width: 170px;
+    }
+
+
+    .modal-body {
+        padding: 10px;
     }
 }

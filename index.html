@@ -14,7 +14,7 @@
     <!-- favicon -->
     <link rel="apple-touch-icon" href="apple_touch_icon.png">
     <link rel="shortcut icon" href="./images/logo/favicon.ico" type="image/x-icon">
-
+    <link rel="import" href="header.html">
     <!-- All CSS -->
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/slick.css">
@@ -30,7 +30,7 @@
 
 <body>
     <!-- Preloader -->
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="loader">
             <span>C</span>
             <span>H</span>
@@ -50,7 +50,7 @@
                 <span></span>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- =========================== 1. Top Header Section =========================================== -->
 
@@ -59,12 +59,12 @@
             <div class="row justify-content-between">
                 <div class="col-xl-4 col-lg-5 col-md-6 col-12">
                     <div class="top-header-contact">
-                        <a href="tel:+1(718)73493">
+                        <a href="tel:+1(844)73493">
                             <i class="fas fa-phone-alt"></i>(844) 952 7324
                         </a>
                     </div>
                     <div class="top-header-contact">
-                        <a href="mailto:info@example.com">
+                        <a href="mailto:order@changeartwork.com">
                             <i class="fas fa-envelope"></i>order@changeartwork.com
                         </a>
                     </div>
@@ -81,8 +81,14 @@
     </div>
 
     <!-- =========================== 2. Menu Section =========================================== -->
+    <!--#include virtual="/footer.html" -->
 
-    <div class="menu-header d-flex align-items-center">
+    <div id="header"></div>
+    <!-- =========================== 3. Banner Section =========================================== -->
+
+    <!-- =========================== 2. Menu Section =========================================== -->
+
+    <!-- <div class="menu-header d-flex align-items-center">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-2 d-flex align-items-center">
@@ -98,7 +104,8 @@
                                 <a href="about.html">About</a>
                             </li>
                             <li>
-                                <a href="services.html">Services</a></li>
+                                <a href="services.html">Services</a>
+                            </li>
                             <li>
                                 <a href="digitizing.html">Digitizing</a>
                             </li>
@@ -120,10 +127,12 @@
             </div>
         </div>
     </div>
+ -->
+
 
     <!-- =========================== 3. Banner Section =========================================== -->
 
-    <div class="modal fade pr-0" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <!-- <div class="modal fade pr-0" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-slideout" role="document">
             <div class="modal-content">
@@ -133,14 +142,37 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body p-5">
-                    <form>
+                <div class="modal-body ">
+                    <form >
+<div class="row pb-3">
+    <div class="col-md-6 py-2">
+                        <div class="card1">
+                            <input type="radio" name="pricing" id="card1">
+                            <label for="card1">
+                                <h5>VECTOR ARTWORK</h5>
+                               
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 py-2">
+                        <div class="card1">
+                            <input type="radio" name="pricing" id="card2" checked>
+                            <label for="card2">
+                                <h5>DIGITIZING
+                                </h5>
+                                
+                            </label>
+                        </div>
+                    </div>
+                    </div>
+
+
                         <div class="form-group">
                             <label for="user">
                                 Name:
                             </label>
                             <input type="text" name="username" id="usernames" required class="form-control">
-                            <small id="usercheck" style="color: #FAAA16;">
+                            <small id="usercheck" style="color: #ff0000;">
                                 Name is missing
                             </small>
                         </div>
@@ -150,8 +182,7 @@
                                 Email:
                             </label>
                             <input type="email" name="email" id="email" required class="form-control">
-                            <small id="emailvalid" class="form-text
-                    text-muted invalid-feedback">
+                            <small id="emailvalid" class="form-text text-muted invalid-feedback" >
                                 Your email must be a valid email
                             </small>
                         </div>
@@ -160,6 +191,7 @@
                         <div class="form-group">
                             <label for="mobile_num" class="col-form-label">Contact Number:</label>
                             <input type="text" class="form-control " id="mobile_num">
+                            <small id="mobile_num" >
                         </div>
 
 
@@ -170,26 +202,29 @@
 
                             <div class="input-group mb-3">
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input " id="file"
-                                        onchange="return fileValidation()">
+                                    <input type="file" class="custom-file-input " id="file"  multiple="multiple" accept="image/png, image/gif, image/jpeg" />
                                     <label class="custom-file-label" for="file">Choose file</label>
                                 </div>
                             </div>
+                            <div id="imagePreview"></div>
                         </div>
 
                         <div class="form-group">
-                            <label for="message-text" class="col-form-label ">Request Details:</label>
-                            <textarea class="form-control " id="message-text"></textarea>
+                            <label for="message" class="col-form-label ">Request Details:</label>
+                            <textarea class="form-control " id="message"></textarea>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer pr-5">
-                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+
                     <button type="submit" id="submitbtn" class="large-blue-button border-0">PLACE QUOTE</button>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+
+
     <!-- Side Modal Bottom Right Danger-->
     <section class="banner">
 
@@ -321,9 +356,12 @@
 
     <!-- =========================== 4. Features Section =========================================== -->
 
+    
+
     <section class="features-area p-0" id="area">
         <div class="section-heading-center text-center bg-grey my-5 p-4">
             <h1>DIGITIZING, SEWOUT SWATCHES, VECTOR ARTWORK, COLOR SEPERATION AND MORE</h1>
+            
             <p>We do all sort of services you could possibly find out the web. Thanks to the combination of people’s
                 talent, latest technologies and trends on the market.
                 Share with us your needs and we will come up with the working solution in 1 hour time.</p>
@@ -529,7 +567,8 @@
                         <div class="service-text">
                             <h1>EMBROIDERY</h1>
                             <p>We run a sew out swatches of all your files (using tajima machine) to make sure the tape
-                                is good with the actual fabric and not only the computer monitor to provide fully customer satisfied result.</p>
+                                is good with the actual fabric and not only the computer monitor to provide fully
+                                customer satisfied result.</p>
                         </div>
                     </div>
                 </div>
@@ -540,7 +579,8 @@
                         </div>
                         <div class="service-text">
                             <h1>PRINTING</h1>
-                            <p>CHANGE! Repairs your existing printing files which is not in good use or creates from scratch to beautiful
+                            <p>CHANGE! Repairs your existing printing files which is not in good use or creates from
+                                scratch to beautiful
                                 documents and also marketing materials for your personal or business usage.</p>
                         </div>
                     </div>
@@ -565,7 +605,8 @@
                         </div>
                         <div class="service-text">
                             <h1>SIGNS</h1>
-                            <p>CHANGE! Provides high quality vector files within 4 hours turn around time to complete.</p>
+                            <p>CHANGE! Provides high quality vector files within 4 hours turn around time to complete.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -991,63 +1032,95 @@
                     </div>
                     <div class="speciality">
                         <div class="sp-text">
-                           
+
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing adipisicing elit.</p>
                         </div>
                     </div>
                     <div class="speciality">
                         <div class="sp-text">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="25" height="25" viewBox="0 0 256 256" xml:space="preserve">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" width="25" height="25" viewBox="0 0 256 256" xml:space="preserve">
 
                                 <defs>
                                 </defs>
-                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                                    <path d="M 89.328 2.625 L 89.328 2.625 c -1.701 -2.859 -5.728 -3.151 -7.824 -0.568 L 46.532 45.173 c -0.856 1.055 -2.483 0.997 -3.262 -0.115 l -8.382 -11.97 c -2.852 -4.073 -8.789 -4.335 -11.989 -0.531 l 0 0 c -2.207 2.624 -2.374 6.403 -0.408 9.211 l 17.157 24.502 c 2.088 2.982 6.507 2.977 8.588 -0.011 l 4.925 -7.07 L 89.135 7.813 C 90.214 6.272 90.289 4.242 89.328 2.625 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(249,173,25); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                                    <path d="M 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 6.072 0 11.967 1.19 17.518 3.538 c 2.034 0.861 2.986 3.208 2.125 5.242 c -0.859 2.035 -3.207 2.987 -5.242 2.126 C 54.842 8.978 49.996 8 45 8 C 24.598 8 8 24.598 8 45 c 0 20.402 16.598 37 37 37 c 20.402 0 37 -16.598 37 -37 c 0 -3.248 -0.42 -6.469 -1.249 -9.573 c -0.57 -2.134 0.698 -4.327 2.832 -4.897 c 2.133 -0.571 4.326 0.698 4.896 2.833 C 89.488 37.14 90 41.055 90 45 C 90 69.813 69.813 90 45 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,189,43); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                    <path
+                                        d="M 89.328 2.625 L 89.328 2.625 c -1.701 -2.859 -5.728 -3.151 -7.824 -0.568 L 46.532 45.173 c -0.856 1.055 -2.483 0.997 -3.262 -0.115 l -8.382 -11.97 c -2.852 -4.073 -8.789 -4.335 -11.989 -0.531 l 0 0 c -2.207 2.624 -2.374 6.403 -0.408 9.211 l 17.157 24.502 c 2.088 2.982 6.507 2.977 8.588 -0.011 l 4.925 -7.07 L 89.135 7.813 C 90.214 6.272 90.289 4.242 89.328 2.625 z"
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(249,173,25); fill-rule: nonzero; opacity: 1;"
+                                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    <path
+                                        d="M 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 6.072 0 11.967 1.19 17.518 3.538 c 2.034 0.861 2.986 3.208 2.125 5.242 c -0.859 2.035 -3.207 2.987 -5.242 2.126 C 54.842 8.978 49.996 8 45 8 C 24.598 8 8 24.598 8 45 c 0 20.402 16.598 37 37 37 c 20.402 0 37 -16.598 37 -37 c 0 -3.248 -0.42 -6.469 -1.249 -9.573 c -0.57 -2.134 0.698 -4.327 2.832 -4.897 c 2.133 -0.571 4.326 0.698 4.896 2.833 C 89.488 37.14 90 41.055 90 45 C 90 69.813 69.813 90 45 90 z"
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,189,43); fill-rule: nonzero; opacity: 1;"
+                                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
                                 </g>
-                                </svg>
+                            </svg>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
                         </div>
                     </div>
                     <div class="speciality">
                         <div class="sp-text">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="25" height="25" viewBox="0 0 256 256" xml:space="preserve">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" width="25" height="25" viewBox="0 0 256 256" xml:space="preserve">
 
                                 <defs>
                                 </defs>
-                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                                    <path d="M 89.328 2.625 L 89.328 2.625 c -1.701 -2.859 -5.728 -3.151 -7.824 -0.568 L 46.532 45.173 c -0.856 1.055 -2.483 0.997 -3.262 -0.115 l -8.382 -11.97 c -2.852 -4.073 -8.789 -4.335 -11.989 -0.531 l 0 0 c -2.207 2.624 -2.374 6.403 -0.408 9.211 l 17.157 24.502 c 2.088 2.982 6.507 2.977 8.588 -0.011 l 4.925 -7.07 L 89.135 7.813 C 90.214 6.272 90.289 4.242 89.328 2.625 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(249,173,25); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                                    <path d="M 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 6.072 0 11.967 1.19 17.518 3.538 c 2.034 0.861 2.986 3.208 2.125 5.242 c -0.859 2.035 -3.207 2.987 -5.242 2.126 C 54.842 8.978 49.996 8 45 8 C 24.598 8 8 24.598 8 45 c 0 20.402 16.598 37 37 37 c 20.402 0 37 -16.598 37 -37 c 0 -3.248 -0.42 -6.469 -1.249 -9.573 c -0.57 -2.134 0.698 -4.327 2.832 -4.897 c 2.133 -0.571 4.326 0.698 4.896 2.833 C 89.488 37.14 90 41.055 90 45 C 90 69.813 69.813 90 45 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,189,43); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                    <path
+                                        d="M 89.328 2.625 L 89.328 2.625 c -1.701 -2.859 -5.728 -3.151 -7.824 -0.568 L 46.532 45.173 c -0.856 1.055 -2.483 0.997 -3.262 -0.115 l -8.382 -11.97 c -2.852 -4.073 -8.789 -4.335 -11.989 -0.531 l 0 0 c -2.207 2.624 -2.374 6.403 -0.408 9.211 l 17.157 24.502 c 2.088 2.982 6.507 2.977 8.588 -0.011 l 4.925 -7.07 L 89.135 7.813 C 90.214 6.272 90.289 4.242 89.328 2.625 z"
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(249,173,25); fill-rule: nonzero; opacity: 1;"
+                                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    <path
+                                        d="M 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 6.072 0 11.967 1.19 17.518 3.538 c 2.034 0.861 2.986 3.208 2.125 5.242 c -0.859 2.035 -3.207 2.987 -5.242 2.126 C 54.842 8.978 49.996 8 45 8 C 24.598 8 8 24.598 8 45 c 0 20.402 16.598 37 37 37 c 20.402 0 37 -16.598 37 -37 c 0 -3.248 -0.42 -6.469 -1.249 -9.573 c -0.57 -2.134 0.698 -4.327 2.832 -4.897 c 2.133 -0.571 4.326 0.698 4.896 2.833 C 89.488 37.14 90 41.055 90 45 C 90 69.813 69.813 90 45 90 z"
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,189,43); fill-rule: nonzero; opacity: 1;"
+                                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
                                 </g>
-                                </svg>
+                            </svg>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing consectetur.</p>
                         </div>
                     </div>
                     <div class="speciality">
                         <div class="sp-text">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="25" height="25" viewBox="0 0 256 256" xml:space="preserve">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" width="25" height="25" viewBox="0 0 256 256" xml:space="preserve">
 
                                 <defs>
                                 </defs>
-                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                                    <path d="M 89.328 2.625 L 89.328 2.625 c -1.701 -2.859 -5.728 -3.151 -7.824 -0.568 L 46.532 45.173 c -0.856 1.055 -2.483 0.997 -3.262 -0.115 l -8.382 -11.97 c -2.852 -4.073 -8.789 -4.335 -11.989 -0.531 l 0 0 c -2.207 2.624 -2.374 6.403 -0.408 9.211 l 17.157 24.502 c 2.088 2.982 6.507 2.977 8.588 -0.011 l 4.925 -7.07 L 89.135 7.813 C 90.214 6.272 90.289 4.242 89.328 2.625 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(249,173,25); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                                    <path d="M 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 6.072 0 11.967 1.19 17.518 3.538 c 2.034 0.861 2.986 3.208 2.125 5.242 c -0.859 2.035 -3.207 2.987 -5.242 2.126 C 54.842 8.978 49.996 8 45 8 C 24.598 8 8 24.598 8 45 c 0 20.402 16.598 37 37 37 c 20.402 0 37 -16.598 37 -37 c 0 -3.248 -0.42 -6.469 -1.249 -9.573 c -0.57 -2.134 0.698 -4.327 2.832 -4.897 c 2.133 -0.571 4.326 0.698 4.896 2.833 C 89.488 37.14 90 41.055 90 45 C 90 69.813 69.813 90 45 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,189,43); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                    <path
+                                        d="M 89.328 2.625 L 89.328 2.625 c -1.701 -2.859 -5.728 -3.151 -7.824 -0.568 L 46.532 45.173 c -0.856 1.055 -2.483 0.997 -3.262 -0.115 l -8.382 -11.97 c -2.852 -4.073 -8.789 -4.335 -11.989 -0.531 l 0 0 c -2.207 2.624 -2.374 6.403 -0.408 9.211 l 17.157 24.502 c 2.088 2.982 6.507 2.977 8.588 -0.011 l 4.925 -7.07 L 89.135 7.813 C 90.214 6.272 90.289 4.242 89.328 2.625 z"
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(249,173,25); fill-rule: nonzero; opacity: 1;"
+                                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    <path
+                                        d="M 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 6.072 0 11.967 1.19 17.518 3.538 c 2.034 0.861 2.986 3.208 2.125 5.242 c -0.859 2.035 -3.207 2.987 -5.242 2.126 C 54.842 8.978 49.996 8 45 8 C 24.598 8 8 24.598 8 45 c 0 20.402 16.598 37 37 37 c 20.402 0 37 -16.598 37 -37 c 0 -3.248 -0.42 -6.469 -1.249 -9.573 c -0.57 -2.134 0.698 -4.327 2.832 -4.897 c 2.133 -0.571 4.326 0.698 4.896 2.833 C 89.488 37.14 90 41.055 90 45 C 90 69.813 69.813 90 45 90 z"
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,189,43); fill-rule: nonzero; opacity: 1;"
+                                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
                                 </g>
-                                </svg>
+                            </svg>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
                         </div>
                     </div>
                     <div class="speciality">
                         <div class="sp-text">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="25" height="25" viewBox="0 0 256 256" xml:space="preserve">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" width="25" height="25" viewBox="0 0 256 256" xml:space="preserve">
 
                                 <defs>
                                 </defs>
-                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                                    <path d="M 89.328 2.625 L 89.328 2.625 c -1.701 -2.859 -5.728 -3.151 -7.824 -0.568 L 46.532 45.173 c -0.856 1.055 -2.483 0.997 -3.262 -0.115 l -8.382 -11.97 c -2.852 -4.073 -8.789 -4.335 -11.989 -0.531 l 0 0 c -2.207 2.624 -2.374 6.403 -0.408 9.211 l 17.157 24.502 c 2.088 2.982 6.507 2.977 8.588 -0.011 l 4.925 -7.07 L 89.135 7.813 C 90.214 6.272 90.289 4.242 89.328 2.625 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(249,173,25); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                                    <path d="M 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 6.072 0 11.967 1.19 17.518 3.538 c 2.034 0.861 2.986 3.208 2.125 5.242 c -0.859 2.035 -3.207 2.987 -5.242 2.126 C 54.842 8.978 49.996 8 45 8 C 24.598 8 8 24.598 8 45 c 0 20.402 16.598 37 37 37 c 20.402 0 37 -16.598 37 -37 c 0 -3.248 -0.42 -6.469 -1.249 -9.573 c -0.57 -2.134 0.698 -4.327 2.832 -4.897 c 2.133 -0.571 4.326 0.698 4.896 2.833 C 89.488 37.14 90 41.055 90 45 C 90 69.813 69.813 90 45 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,189,43); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                    <path
+                                        d="M 89.328 2.625 L 89.328 2.625 c -1.701 -2.859 -5.728 -3.151 -7.824 -0.568 L 46.532 45.173 c -0.856 1.055 -2.483 0.997 -3.262 -0.115 l -8.382 -11.97 c -2.852 -4.073 -8.789 -4.335 -11.989 -0.531 l 0 0 c -2.207 2.624 -2.374 6.403 -0.408 9.211 l 17.157 24.502 c 2.088 2.982 6.507 2.977 8.588 -0.011 l 4.925 -7.07 L 89.135 7.813 C 90.214 6.272 90.289 4.242 89.328 2.625 z"
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(249,173,25); fill-rule: nonzero; opacity: 1;"
+                                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    <path
+                                        d="M 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 6.072 0 11.967 1.19 17.518 3.538 c 2.034 0.861 2.986 3.208 2.125 5.242 c -0.859 2.035 -3.207 2.987 -5.242 2.126 C 54.842 8.978 49.996 8 45 8 C 24.598 8 8 24.598 8 45 c 0 20.402 16.598 37 37 37 c 20.402 0 37 -16.598 37 -37 c 0 -3.248 -0.42 -6.469 -1.249 -9.573 c -0.57 -2.134 0.698 -4.327 2.832 -4.897 c 2.133 -0.571 4.326 0.698 4.896 2.833 C 89.488 37.14 90 41.055 90 45 C 90 69.813 69.813 90 45 90 z"
+                                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,189,43); fill-rule: nonzero; opacity: 1;"
+                                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
                                 </g>
-                                </svg>
+                            </svg>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing dolor sit amet.</p>
                         </div>
                     </div>
@@ -1083,7 +1156,7 @@
                             <p>Li lingues differe solmen in li grammat
                                 ca, li pronuncia tion e li plu commun vocabules. Omnicos directe al desi
                                 lite de un nov lingua fusa.</p>
-                                <img src="images/projects/quote-r.png" class="img-fluid float-right" alt="Vector Art">
+                            <img src="images/projects/quote-r.png" class="img-fluid float-right" alt="Vector Art">
                         </div>
                         <div class="client-profile">
                             <img src="images/clients/client.png" alt="Change">
@@ -1102,7 +1175,7 @@
                             <p>Li lingues differe solmen in li grammat
                                 ca, li pronuncia tion e li plu commun vocabules. Omnicos directe al desi
                                 lite de un nov lingua fusa.</p>
-                                <img src="images/projects/quote-r.png" class="img-fluid float-right" alt="Vector Art">
+                            <img src="images/projects/quote-r.png" class="img-fluid float-right" alt="Vector Art">
                         </div>
                         <div class="client-profile">
                             <img src="images/clients/client.png" alt="Change">
@@ -1121,7 +1194,7 @@
                             <p>Li lingues differe solmen in li grammat
                                 ca, li pronuncia tion e li plu commun vocabules. Omnicos directe al desi
                                 lite de un nov lingua fusa.</p>
-                                <img src="images/projects/quote-r.png" class="img-fluid float-right" alt="Vector Art">
+                            <img src="images/projects/quote-r.png" class="img-fluid float-right" alt="Vector Art">
                         </div>
                         <div class="client-profile">
                             <img src="images/clients/client-02.png" alt="Change">
@@ -1140,7 +1213,7 @@
                             <p>Li lingues differe solmen in li grammat
                                 ca, li pronuncia tion e li plu commun vocabules. Omnicos directe al desi
                                 lite de un nov lingua fusa.</p>
-                                <img src="images/projects/quote-r.png" class="img-fluid float-right" alt="Vector Art">
+                            <img src="images/projects/quote-r.png" class="img-fluid float-right" alt="Vector Art">
                         </div>
                         <div class="client-profile">
                             <img src="images/clients/client-02.png" alt="Change">
@@ -1159,7 +1232,7 @@
                             <p>Li lingues differe solmen in li grammat
                                 ca, li pronuncia tion e li plu commun vocabules. Omnicos directe al desi
                                 lite de un nov lingua fusa.</p>
-                                <img src="images/projects/quote-r.png" class="img-fluid float-right" alt="Vector Art">
+                            <img src="images/projects/quote-r.png" class="img-fluid float-right" alt="Vector Art">
                         </div>
                         <div class="client-profile">
                             <img src="images/clients/client-02.png" alt="Change">
@@ -1182,7 +1255,8 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6 col-9">
                     <h2>Contact Us</h2>
-                    <p>(844) 952 7324 <br>order@changeartwork.com<br>19 W. 34th St., Ste. 1018, <br>New York, NY 10001 </p>
+                    <p>(844) 952 7324 <br>order@changeartwork.com<br>19 W. 34th St., Ste. 1018, <br>New York, NY 10001
+                    </p>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 col-9">
                     <h2>Important</h2>
@@ -1224,6 +1298,7 @@
     </div>
 
     <!-- All JS -->
+
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/all.min.js"></script>
@@ -1234,104 +1309,103 @@
     <script src="js/jquery.meanmenu.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
+
+
+
     <script>
         new WOW().init();
     </script>
     <script src="js/main.js"></script>
-
-
-    <script>
-        // Document is ready
-        $(document).ready(function () {
-            // Validate Username
-            $("#usercheck").hide();
-            let usernameError = true;
-            $("#usernames").keyup(function () {
-                validateUsername();
-            });
-
-            function validateUsername() {
-                let usernameValue = $("#usernames").val();
-                if (usernameValue.length == "") {
-                    $("#usercheck").show();
-                    usernameError = false;
-                    return false;
-                } else if (usernameValue.length < 3 || usernameValue.length > 30) {
-                    $("#usercheck").show();
-                    $("#usercheck").html("Length of name must be between 3 and 30");
-                    usernameError = false;
-                    return false;
-                } else {
-                    $("#usercheck").hide();
-                }
-            }
-
-            // Validate Email
-            const email = document.getElementById("email");
-            email.addEventListener("blur", () => {
-                let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
-                let s = email.value;
-                if (regex.test(s)) {
-                    email.classList.remove("is-invalid");
-                    emailError = true;
-                } else {
-                    email.classList.add("is-invalid");
-                    emailError = false;
-                }
-            });
-
-            function fileValidation() {
-                var fileInput =
-                    document.getElementById('file');
-
-                var filePath = fileInput.value;
-
-                // Allowing file type
-                var allowedExtensions =
-                    /(\.jpg|\.jpeg|\.png|\.gif)$/i;
-
-                if (!allowedExtensions.exec(filePath)) {
-                    alert('Invalid file type');
-                    fileInput.value = '';
-                    return false;
-                }
-                else {
-
-                    // Image preview
-                    if (fileInput.files && fileInput.files[0]) {
-                        var reader = new FileReader();
-                        reader.onload = function (e) {
-                            document.getElementById(
-                                'imagePreview').innerHTML =
-                                '<img src="' + e.target.result
-                                + '"/>';
-                        };
-
-                        reader.readAsDataURL(fileInput.files[0]);
-                    }
-                }
-            }
-
-
-
-            // Submit button
-            $("#submitbtn").click(function () {
-                validateUsername();
-                fileValidation();
-                validateEmail();
-                if (
-                    usernameError == true &&
-                    emailError == true
-                ) {
-                    return true;
-                } else {
-                    return false;
-                }
-            });
+    <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+         
         });
+        </script> 
+
+    <!-- <script>
+
+        const url = "dev.changeartwork.com/api/quote/create";
+
+        fetch('url')
+            .then(response => {
+                //handle response            
+                console.log(response);
+            })
+            .then(data => {
+                //handle data
+                console.log(data);
+            })
+            .catch(error => {
+                //handle error
+            });
 
 
-    </script>
+    </script> -->
+<!-- <script>
+
+    // main.js
+
+// POST request using fetch()
+fetch("dev.changeartwork.com/api/quote/create", {
+	
+	// Adding method type
+	method: "POST",
+	
+	// Adding body or contents to send
+	body: JSON.stringify({
+		name: "usernames",
+		email: "email",
+		contact: "mobile_num",
+        memo: "message",
+        file: "file",
+	}),
+	
+	// Adding headers to the request
+	headers: {
+		"Content-type": "application/json; charset=UTF-8"
+	}
+})
+
+// Converting to JSON
+.then(response => response.json())
+
+// Displaying results to console
+.then(json => console.log(json));
+
+</script> -->
+
+    <!-- <script>
+       const headers = new Headers({
+  "Content-Type": "application/x-www-form-urlencoded"
+});
+
+const urlencoded = new URLSearchParams({
+  "name": "usernames",
+  "mail": "test",
+  "contact": "12347890w",
+  "memo": "write",
+ 
+});
+
+const opts = {
+  method: 'POST',
+  headers: headers,
+  body: urlencoded,
+};
+
+fetch("http://dev.changeartwork.com/api/quote/create", opts); 
+    </script> 
+
+
+    <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+         
+        });
+        </script>  -->
+
+  
 </body>
 
 </html>
