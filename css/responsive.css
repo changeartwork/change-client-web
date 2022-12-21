@@ -96,6 +96,13 @@
     .menu-area ul li {
         font-size: 12px;
       }
+      .form-group {
+        margin-bottom: 5px;
+    }
+
+    .modal-body {
+        padding: 15px;
+    }
 
 
 }
@@ -251,6 +258,14 @@
 
     .top-header-contact{margin-right: 15px;}
 
+    .form-group {
+        margin-bottom: 5px;
+    }
+
+    .modal-body {
+        padding: 15px;
+    }
+
 }
 
 @media screen and (max-width: 767.5px) {
@@ -336,7 +351,7 @@
         margin-left: inherit;
     }
     .top-header-contact {
-        margin-left: 15px;
+        margin-left: 1px;
         margin-right: 0;
     }
     .menu-header {
