@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <body>
     <!-- =========================== 1. Menu Section =========================================== -->
     <div class="menu-header d-flex align-items-center">
@@ -43,8 +44,7 @@
     </div>
 
     <!-- =========================== 2. Quote Modal Pop-up =========================================== -->
-    <div class="modal fade pr-0" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="quoteModalLabel"
-        aria-hidden="true">
+    <div class="modal fade pr-0" id="quoteModal" role="dialog" aria-labelledby="quoteModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-slideout" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -60,7 +60,7 @@
                                 Name
                             </label>
                             <input type="text" name="name" id="name" required class="form-control">
-                            <small id="usercheck" class="form-text text-muted invalid-feedback">
+                            <small id="usercheck" class="form-text invalid-feedback">
                                 Name is missing
                             </small>
                         </div>
@@ -70,7 +70,7 @@
                                 Email
                             </label>
                             <input type="email" name="mail" id="mail" required class="form-control">
-                            <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                            <small id="emailvalid" class="form-text invalid-feedback">
                                 Email address is not provided
                             </small>
                         </div>
@@ -78,7 +78,7 @@
                         <div class="form-group">
                             <label for="mobile_num" class="col-form-label">Contact Number</label>
                             <input type="text" class="form-control " id="contact" name="contact" required>
-                            <small id="mobilevalid" class="form-text text-muted invalid-feedback">
+                            <small id="mobilevalid" class="form-text invalid-feedback">
                                 Your contact number is missing
                             </small>
                         </div>
@@ -118,7 +118,7 @@
                                             accept="image/png, image/gif, image/jpeg" />
                                         <label class="custom-file-label" id="custom-file-label" for="files">Choose
                                             file(s)</label>
-                                        <small id="filevalid" class="form-text text-muted invalid-feedback">
+                                        <small id="filevalid" class="form-text invalid-feedback">
                                             Unsupported file format
                                         </small>
                                     </div>
@@ -130,7 +130,7 @@
                             <label for="message" class="col-form-label ">Give us more details about your
                                 requirement</label>
                             <textarea class="form-control " id="memo" name="memo"></textarea>
-                            <small id="messagevalid" class="form-text text-muted invalid-feedback">
+                            <small id="messagevalid" class="form-text invalid-feedback">
                                 Supports 100 aphanumeric characters, avoid special symbols
                             </small>
                         </div>
@@ -143,29 +143,27 @@
             </div>
         </div>
     </div>
-    `
+
     <!-- =========================== 3. Success Modal ===========================================-->
     <div class="modal fade" id="success" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">\
+        <div class="modal-dialog modal-dialog-slideout" role="document">
             <div class="modal-content" style="border:none;border-radius: 5px;">
-                <div class="modal-header" style="background: #1ab394;
+                <div class="" style="background: #F9AD19;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;">
-                    <button type="button" class="close" data-dismiss="modal"
-                        style="opacity:1;color:#fff;">&times;</button>
                     <h4 class="modal-title text-center"><img
-                            src="https://lh3.googleusercontent.com/-Zxh4srAEtU0/Wp0cZV-PJuI/AAAAAAAAD4E/En5x5c53s44jzvG8M0sSyFZXoRhGXfBzwCL0BGAYYCw/h100/2018-03-05.png"
+                            src="./images/shapes/success.png"
                             alt=""></h4>
                 </div>
                 <div class="modal-body">
-                    <p style="text-align:center;color:#1ab394;font-size:24px;font-weight:500;">Bravo! Quote placed
+                    <p style="text-align:center;color:#F9AD19;font-size:24px;font-weight:500;">Bravo! Quote placed
                         Successful!</p>
                     <p style="color:#555555;">This quotation request will be validated by
                         our client service team and we will get back to you over mail with in<strong
-                            style="font-weight:500;font-size:15px;color: #222222;"> 30 minutes</strong></p>
+                            style="font-weight:500;font-size:15px;color: #F9AD19;"> 30 minutes</strong></p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" id="closeButton" class="large-blue-button border-0" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -173,26 +171,26 @@
 
     <!-- =========================== 4. Failure Modal ===========================================-->
     <div class="modal fade" id="fail" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-slideout" role="document">
             <div class="modal-content" style="border:none;border-radius: 5px;">
-                <div class="modal-header" style="background: #d75a4a;
+                <div class="" style="background: #4F4F4F;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;">
-                    <button type="button" class="close" data-dismiss="modal"
-                        style="opacity:1;color:#fff;">&times;</button>
                     <h4 class="modal-title text-center"><img
-                            src="https://lh3.googleusercontent.com/-ApBj8d4WL1E/Wp0fJeAD6jI/AAAAAAAAD4M/Dh6l_UiA64kln8PS-1SaDQFuhb9KJL40gCL0BGAYYCw/h100/2018-03-05.png"
+                            src="./images/shapes/fail.png"
                             alt=""></h4>
                 </div>
                 <div class="modal-body">
-                    <p style="text-align:center;color:#d75a4a;font-size:24px;font-weight:500;">Sorry! Unable to process your
+                    <p style="text-align:center;color:#d75a4a;font-size:24px;font-weight:500;">Sorry! Unable to process
+                        your
                         request at this time!</p>
-                    <p style="color:#555555;">We regret the inconvience caused, please feel free to email your quotation request to our email system,
+                    <p style="color:#555555;">We regret the inconvience caused, please feel free to email your quotation
+                        request to our email system,
                         Our client serivce team (order@changeartwork.com) will get back to you with in<strong
-                            style="font-weight:500;font-size:15px;color: #222222;"> 30 minutes</strong></p>
+                            style="font-weight:500;font-size:15px;color: #d75a4a;"> 30 minutes</strong></p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" style="background-color: #4F4F4F" id="closeButton" class="large-blue-button border-0" data-dismiss="modal">Close</button>
                 </div>
             </div>
 
@@ -266,15 +264,7 @@
                     };
 
                     fetch('http://dev.changeartwork.com/v1/api/quote/create', options)
-                        .then(
-                            success => console.log(success),
-                            $('#quoteModalClose').click(),
-                            $('#success').modal('show'),
-                        ).catch(
-                            error => console.log(error),
-                            $('#quoteModalClose').click(),
-                            $('#fail').modal('show')
-                        );
+                        .then(redirect)
                 } else {
                     alert("Validation error, check the inputs provided.")
                 }
@@ -287,6 +277,24 @@
                 file.value = '';
                 $("#custom-file-label").html("Choose file(s)");
             })
+
+            function redirect(response) {
+                if (response.status == 201) {
+                    switchModals("#quoteModal","#success")
+                } else {
+                    switchModals("#quoteModal","#fail")
+                }
+            }
+
+            //Hide the fromModal and open toModal
+            function switchModals(fromModal, toModal) {
+                $(fromModal).on('hidden.bs.modal', function (e) {
+                    e.preventDefault();
+                    $(toModal).modal('show');
+                    $(fromModal).off();
+                });
+                $(fromModal).modal('hide');
+            }
 
             function validateUsername() {
                 let usernameValue = $("#name").val();
@@ -362,4 +370,5 @@
         })
     </script>
 </body>
+
 </html>

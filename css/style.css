@@ -2511,12 +2511,11 @@ section.member-skills {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
-  
 
   .modal.fade.show .modal-dialog.modal-dialog-slideout {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
-    display: flex;
+    display: block;
     align-items: start;
     -webkit-box-align: start;
     height: 100%;
@@ -2641,4 +2640,16 @@ section.member-skills {
 
   .modal-body {
     padding: 40px;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+.text-center {
+    text-align: center;
+}
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
 }
