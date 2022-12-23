@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,7 @@
     <!-- favicon -->
     <link rel="apple-touch-icon" href="apple_touch_icon.png">
     <link rel="shortcut icon" href="./images/logo/favicon.ico" type="image/x-icon">
-
+   
     <!-- All CSS -->
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/slick.css">
@@ -30,7 +30,7 @@
 
 <body>
     <!-- Preloader -->
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="loader">
             <span>C</span>
             <span>H</span>
@@ -50,7 +50,7 @@
                 <span></span>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- =========================== 1. Top Header Section =========================================== -->
 
@@ -89,9 +89,9 @@
 
     <!-- =========================== 2. Menu Section =========================================== -->
 
+    
 
-
-
+    
 
 
 
@@ -118,8 +118,8 @@
                                     difficulty level. Push the button below to contact your personal manager.
                                     We will get back to you in 15 to 30 minutes time.
                                 </p>
-                                <a href="#" class="large-blue-button  d-block  d-lg-none"
-                                    data-toggle="modal" data-target="#quoteModal" data-whatever="@mdo">Get a quote</a>
+                                <a href="getquote.html" class="large-blue-button  d-block  d-lg-none"
+                                    data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Get a quote</a>
                             </div>
                         </div>
                         <div class="col-xl-5 col-lg-6 col-md-6">
@@ -226,11 +226,11 @@
 
     <!-- =========================== 4. Features Section =========================================== -->
 
-
+    
     <section class="features-area p-0" id="area">
         <div class="section-heading-center text-center bg-grey my-5 p-4">
             <h1>DIGITIZING, SEWOUT SWATCHES, VECTOR ARTWORK, COLOR SEPERATION AND MORE</h1>
-
+            
             <p>We do all sort of services you could possibly find out the web. Thanks to the combination of people’s
                 talent, latest technologies and trends on the market.
                 Share with us your needs and we will come up with the working solution in 1 hour time.</p>
@@ -1183,11 +1183,96 @@
         new WOW().init();
     </script>
     <script src="js/main.js"></script>
-    <script>
-        $(function () {
-            $("#header").load("header.html");
+    <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+         
         });
-    </script>
+        </script> 
+
+    <!-- <script>
+
+        const url = "dev.changeartwork.com/api/quote/create";
+
+        fetch('url')
+            .then(response => {
+                //handle response            
+                console.log(response);
+            })
+            .then(data => {
+                //handle data
+                console.log(data);
+            })
+            .catch(error => {
+                //handle error
+            });
+
+
+    </script> -->
+<!-- <script>
+
+    // main.js
+
+// POST request using fetch()
+fetch("dev.changeartwork.com/api/quote/create", {
+	
+	// Adding method type
+	method: "POST",
+	
+	// Adding body or contents to send
+	body: JSON.stringify({
+		name: "usernames",
+		email: "email",
+		contact: "mobile_num",
+        memo: "message",
+        file: "file",
+	}),
+	
+	// Adding headers to the request
+	headers: {
+		"Content-type": "application/json; charset=UTF-8"
+	}
+})
+
+// Converting to JSON
+.then(response => response.json())
+
+// Displaying results to console
+.then(json => console.log(json));
+
+</script> -->
+
+    <!-- <script>
+       const headers = new Headers({
+  "Content-Type": "application/x-www-form-urlencoded"
+});
+
+const urlencoded = new URLSearchParams({
+  "name": "usernames",
+  "mail": "test",
+  "contact": "12347890w",
+  "memo": "write",
+ 
+});
+
+const opts = {
+  method: 'POST',
+  headers: headers,
+  body: urlencoded,
+};
+
+fetch("http://dev.changeartwork.com/api/quote/create", opts); 
+    </script> 
+
+  --> 
+     <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+         
+        });
+        </script>
+
+  
 </body>
 
 </html>

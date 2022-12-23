@@ -2558,9 +2558,7 @@ section.member-skills {
     border: 0;
 }
 
-.modal {top: auto;}
 
-.modal-open .modal{overflow-y: hidden;}
 .service-box {
     min-height: 320px;
   }
