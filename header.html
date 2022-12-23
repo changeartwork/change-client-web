@@ -213,12 +213,6 @@
 
     <script>
         $(document).ready(function () {
-            $('a').each(function () {
-                    if ($(this).prop('href') == window.location.href) {
-                        $(this).addClass('current-menu-item');
-                        $(this).parents('li').addClass('current-menu-item');
-                    }
-            });
             // Validate Username
             $("#usercheck").hide();
             let usernameError = true;
