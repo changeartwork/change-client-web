@@ -3,7 +3,7 @@
 
   // Pre loader
   $(window).on("load", function () {
-    $(".preloader").fadeOut(2000),
+    $(".preloader").fadeOut(1000),
       $("body").css({ "overflow-y": "inherit" });
     $(".mean-container .mean-bar").css({ "display": "inherit" })
   });
