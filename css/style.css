@@ -2651,3 +2651,14 @@ section.member-skills {
     padding: 15px;
     border-bottom: 1px solid #e5e5e5;
 }
+.modal {
+    z-index: 9999999;
+}
+/* .selected {
+    color:red;
+    text-decoration:underlined;
+}
+.in-active {
+    color:black;
+    text-decoration:none;
+} */
