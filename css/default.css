@@ -38,8 +38,7 @@ html {
 body {
     box-sizing: border-box;
     margin: 0;
-    overflow-x: hidden;
-    
+    overflow-y: scroll;
 }
 
 form {
