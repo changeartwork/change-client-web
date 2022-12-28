@@ -317,6 +317,7 @@
     .modal-body {
         padding: 10px;
     }
+    .mean-container .mean-bar{    z-index: 1024;}
 
 }
 
@@ -336,7 +337,7 @@
         margin-left: inherit;
     }
     .top-header-contact {
-        margin-left: 15px;
+        margin-left: 8px;
         margin-right: 0;
     }
     .menu-header {
@@ -533,6 +534,10 @@
     .modal-body {
         padding: 10px;
     }
+    .form-group {
+        margin-bottom: 5px;
+    }
+    .mean-container .mean-bar{    z-index: 1024;}
 }
 
 @media screen and (max-width: 400px) {
@@ -603,6 +608,11 @@
     .modal-body {
         padding: 10px;
     }
+    .form-group {
+        margin-bottom: 5px;
+    }
+
+    .mean-container .mean-bar{    z-index: 1024;}
 }
 
 @media screen and (max-width: 374.5px) {
@@ -617,4 +627,9 @@
     .modal-body {
         padding: 10px;
     }
+
+    .form-group {
+        margin-bottom: 5px;
+    }
+    .mean-container .mean-bar{    z-index: 1024;}
 }

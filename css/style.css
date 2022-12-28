@@ -2558,9 +2558,7 @@ section.member-skills {
     border: 0;
 }
 
-.modal {top: auto;}
 
-.modal-open .modal{overflow-y: hidden;}
 .service-box {
     min-height: 320px;
   }
@@ -2653,3 +2651,14 @@ section.member-skills {
     padding: 15px;
     border-bottom: 1px solid #e5e5e5;
 }
+.modal {
+    z-index: 9999999;
+}
+/* .selected {
+    color:red;
+    text-decoration:underlined;
+}
+.in-active {
+    color:black;
+    text-decoration:none;
+} */
