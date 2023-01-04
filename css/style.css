@@ -2662,3 +2662,17 @@ section.member-skills {
     color:black;
     text-decoration:none;
 } */
+
+.errors {
+    display: block;
+    color: red;
+    margin-top: 5px;
+  }
+  .error {
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    box-shadow: 0 0 15px 0 rgba(255,36,0,1);
+  }

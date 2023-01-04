@@ -131,31 +131,45 @@
             </div>
             <!-- Contact Form -->
             <div class="contact-form-area wow animate__animated animate__fadeIn px-4">
-                <h2>Leave a message</h2>
-                <div class="row">
-                    <form action="#">
+             
+               
+                <div class="form-container">
+                    <h1>Contact Form</h1>
+                    <div class="row">
+                    <form name="contactForm" method="post" onsubmit = "return validate()" action="#">
                         <div class="col-md-4">
-                            <input type="text" placeholder="Your Name">
-                        </div>
-                        <div class="col-md-4">
-                            <input type="email" placeholder="Your Email">
-                        </div>
-                        <div class="col-md-4">
-                            <input type="text" placeholder="Subject">
-                        </div>
-                        <div class="col-12">
-                            <textarea placeholder="Your Message"></textarea>
-                            <input class="large-blue-button" type="submit" value="Send Message">
-                        </div>
+                     
+                      <input type="text" id="name" name="name" placeholder="Your name" >
+                      <span class="errors"></span>
+                  </div>
+                  <div class="col-md-4">
+                    
+                      <input type="text" placeholder="Email address" id="email" name="email" >
+                      <span class="errors"></span><br>
+                  </div>
+                  <div class="col-md-4">
+                     
+                      <input type="text" placeholder="Phone number" id="phone" name="phone" >
+                      <span class="errors"></span><br>
+                      </div>
+                      <div class="col-md-12">
+                      
+                      <textarea placeholder="Your message" cols="132" rows="5" name="subject" id="subject"></textarea>
+                      <span class="errors"></span><br>
+                  </div>
+                      <button type="submit"  class="btn btn-warning large-blue-button" value="Submit">Submit</button>
                     </form>
+                  </div>
                 </div>
+
+               
             </div>
         </div>
     </section>
 
     <!-- =========================== 5. Custom Project Section =========================================== -->
 
-    <div class="custom-projects">
+    <!-- <div class="custom-projects">
         <div class="container d-lg-flex align-items-center">
             <div class="section-heading">
                 <h1>Custom Projects</h1>
@@ -181,7 +195,7 @@
                 alt="Change">
         </div>
         <div class="custom-projects-circle-4"></div>
-    </div>
+    </div> -->
     <!-- =========================== 11. Footer Section =========================================== -->
 
     <section class="footer-area">
@@ -245,13 +259,135 @@
     <script>
         new WOW().init();
     </script>
-    <script src="js/main.js"></script>
+   
     <script> 
         $(function(){
           $("#header").load("header.html"); 
          
         });
         </script>
+
+
+
+        <script>
+          var validate = function(e) {
+    var fields = document.querySelectorAll('.form-container textarea, .form-container input[type="text"]');
+    var regEx;
+    var removeSpan;
+    var par;
+    var check = false;
+    var val;
+    var errArr = [];
+
+    for (var i = 0; i < fields.length; i++) {
+        if (fields[i].value === "") {
+          
+            if (fields[i].nextElementSibling.classList.contains('error')) {
+              removeSpan = fields[i].nextElementSibling;
+              par = fields[i].parentNode;
+              par.removeChild(removeSpan);
+              fields[i].nextElementSibling.innerHTML = "Hmmm! " + fields[i].placeholder + " is required?";
+              fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
+              check = false;
+              errArr.push(fields[i]);
+            }
+            fields[i].nextElementSibling.innerHTML = "Hmmm! " + fields[i].placeholder + " is required?";
+            fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
+            check = false;
+            errArr.push(fields[i]);
+        } else {
+
+            // check if message and name values contain valid characters.
+            if (fields[i].id !== 'email' && fields[i].id !== 'phone') {
+                val = isValidChar(fields[i]);
+                if(val === false) {
+                  fields[i].nextElementSibling.innerHTML = "Are you trying to HACK ME!";
+                  fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
+                  check = false;
+                  errArr.push(fields[i]);
+                } else {
+                  fields[i].nextElementSibling.innerHTML = "";
+                  fields[i].style.boxShadow = "none";
+                  check = true;
+                }
+            }
+          
+            if(fields[i].id === 'phone') {
+              val = isValidPhone(fields[i]);
+              if(val === false) {
+                fields[i].nextElementSibling.innerHTML = "Hmmm! Your phone number is not valid?";
+                fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
+                check = false;
+                errArr.push(fields[i]);
+              } else {
+                fields[i].nextElementSibling.innerHTML = "";
+                fields[i].style.boxShadow = "none";
+                check = true;  
+              }
+            }
+
+            if (fields[i].id === 'email') {
+                val = isValidEmail(fields[i]);
+                if(val === false) {
+                    fields[i].nextElementSibling.innerHTML = "Hmmm! Your email address is not valid?";
+                    fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
+                    check = false;
+                    errArr.push(fields[i]);
+                } else {
+                    fields[i].nextElementSibling.innerHTML = "";
+                    fields[i].style.boxShadow = "none";
+                    check = true;
+                }
+            }
+        }
+    }
+  
+    if(check === false) {
+      var count = 0;
+      var toErr = setInterval(function() {
+        var e = errArr[0].offsetTop + -25;
+        var pos = Math.abs(e);
+        if(count < pos) {
+          count ++;
+          window.scrollTo(0, count);
+        } else {
+          clearInterval(toErr);
+        }
+      }, 1);
+    }
+    
+    return check
+
+    // Helper functions.
+    function isValidEmail(e) {
+        regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var email = e.value;
+        if (!regEx.test(email)) {
+            return false;
+        }
+    }
+
+    function isValidChar(e) {
+        regEx = /^[a-zA-Z@#$%!?^&*()_+\-=\[\]{};':"\\|,.\/? ]*$/;
+        var value = e.value;
+        if (!regEx.test(value)) {
+            return false;
+        }
+    }
+  
+    function isValidPhone(e) {
+      regEx = /^[+]?[(]?[+]?\d{2,4}[)]?[-\s]?\d{2,8}[-\s]?\d{2,8}$/;
+      var value = e.value;
+      if(!regEx.test(value)) {
+        return false;
+      }
+    }
+};
+        </script>
+
+
+
+          <script src="js/main.js"></script>
 </body>
 
 </html>
