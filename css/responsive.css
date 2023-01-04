@@ -538,6 +538,8 @@
         margin-bottom: 5px;
     }
     .mean-container .mean-bar{    z-index: 1024;}
+
+    .navbar-collapse {background-color: #f9ad19;} 
 }
 
 @media screen and (max-width: 400px) {

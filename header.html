@@ -13,10 +13,61 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+   
 </head>
 
 <body>
+   
     <!-- =========================== 1. Menu Section =========================================== -->
+    
+
+<!-- <div class="menu-bar">
+        <div class="container">
+            <div class="row justify-content-between">
+              
+                <div class="col-12 d-flex align-items-center">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                        <a href="index.html"><img class="logo" src="images/logo/site-logo/logo.png" alt="change"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse bg-dark" id="navbarCollapse">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="digitizing.html">Digitizing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="vector.html">Vector Artwork</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faq.html">Faq</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                           
+                          </div>
+                        </nav>
+                    <div class="mobile-menu"></div>
+                    <a href="#" class="large-blue-button menu-button" data-toggle="modal" data-target="#quoteModal"
+                        data-whatever="@mdo">Get a quote</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
     <div class="menu-header d-flex align-items-center">
         <div class="container">
             <div class="row justify-content-between">
@@ -25,30 +76,34 @@
                 </div>
                 <div class="col-10 d-flex align-items-center">
                     <nav id="mobile-menu" class="menu-area d-lg-flex align-items-center ml-auto">
-                        <ul>
+                         <ul>
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="index.html" class="nlink">Home</a>
                             </li>
                             <li>
-                                <a href="about.html">About</a>
+                                <a href="about.html" class="nlink">About</a>
                             </li>
                             <li>
-                                <a href="services.html">Services</a>
+                                <a href="services.html" class="nlink">Services</a>
                             </li>
                             <li>
-                                <a href="digitizing.html">Digitizing</a>
+                                <a href="digitizing.html" class="nlink">Digitizing</a>
                             </li>
                             <li>
-                                <a href="vector.html">Vector Artwork</a>
+                                <a href="vector.html" class="nlink">Vector Artwork</a>
                             </li>
                             <li>
-                                <a href="faq.html">Faq</a>
+                                <a href="faq.html" class="nlink">Faq</a>
                             </li>
                             <li>
-                                <a href="contact.html">Contact Us</a>
+                                <a href="contact.html" class="nlink">Contact Us</a>
                             </li>
-                        </ul>
+                        </ul>  
+
+                       
                     </nav>
+                    
+
                     <div class="mobile-menu"></div>
                     <a href="#" class="large-blue-button menu-button" data-toggle="modal" data-target="#quoteModal"
                         data-whatever="@mdo">Get a quote</a>
@@ -210,7 +265,22 @@
     </div>
 
     <!-- =========================== 4.Handling events and actions ============================-->
+   
+    <!-- <script>
+    $(".mobile-menu .nlink").on("click", function(){
+        $(".nav").find(".active").removeClass("active");
+        $(this).addClass("active");
+     });</script> -->
+    <!-- <script>
+        function myFunction(e) {
+  var elems = document.querySelectorAll(".active");
+  [].forEach.call(elems, function(el) {
+    el.classList.remove("active");
+  });
+  e.target.className = "active";
+}
 
+    </script> -->
     <script>
         $(document).ready(function () {
             // Validate Username
@@ -383,6 +453,7 @@
         })
     </script>
     <script src="js/main.js"></script>
+   
 </body>
 
 </html>
